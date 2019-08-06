@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_speaker_notes_black_24dp"
+            android:title="Reclamacion de objetos extraviados" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_directions_bus_black_2444dp"
+            android:title="Solicitud de servicios especial de autobuses" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="Consulta de objetos extraviados" />
+    </group>
+
+    <item android:title="Comunicacion">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Rutas" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Contactanos" />
+        </menu>
+    </item>
+
+</menu>
