@@ -48,21 +48,6 @@
                 android:inputType="textPersonName" />
 
             <TextView
-                android:id="@+id/textView3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center" />
-
-            <EditText
-                android:id="@+id/editText3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="WebSite"
-                android:inputType="textPersonName" />
-
-            <TextView
                 android:id="@+id/textView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -84,7 +69,7 @@
                 android:gravity="center" />
 
             <EditText
-                android:id="@+id/editText7"
+                android:id="@+id/contra"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -157,7 +142,7 @@
                 android:layout_height="12dp" />
 
             <EditText
-                android:id="@+id/editText6"
+                android:id="@+id/nombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"

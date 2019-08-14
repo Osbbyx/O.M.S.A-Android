@@ -22,6 +22,9 @@ public class ServicioObjetoExtraviados extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, opciones);
         sp1.setAdapter(adapter);
 
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+
     }
 
     public void seleccion(View view){

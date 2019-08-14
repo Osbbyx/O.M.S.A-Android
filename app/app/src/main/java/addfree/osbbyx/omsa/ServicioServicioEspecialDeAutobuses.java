@@ -16,6 +16,9 @@ public class ServicioServicioEspecialDeAutobuses extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_servicio_servicio_especial_de_autobuses);
 
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+
         wv = (WebView)findViewById(R.id.wv1);
 
         String URL = "https://docs.google.com/spreadsheets/d/1AIxENVfZLWqCFaqsGZsZe_rRMIfZbeI5Fo4vyFUlbsU/edit?usp=sharing";

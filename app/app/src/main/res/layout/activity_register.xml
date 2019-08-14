@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="164dp"
+                android:layout_height="160dp"
+                android:background="@mipmap/ic_omsa" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="26dp" />
+
+            <EditText
+                android:id="@+id/nombre"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                android:ems="10"
+                android:gravity="center|left"
+                android:hint=" Nombre"
+                android:inputType="textPersonName"
+                android:textColorHint="#000"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <EditText
+                android:id="@+id/telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_phone_iphone_black_24dp"
+                android:ems="10"
+                android:hint=" Telefono"
+                android:inputType="phone"
+                android:textColorHint="#000"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_mail_black_24dp"
+                android:ems="10"
+                android:hint="Correo de Gmail"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#000"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <EditText
+                android:id="@+id/edad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_child_care_black_24dp"
+                android:ems="10"
+                android:hint=" Edad"
+                android:inputType="number"
+                android:textColorHint="#000"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <EditText
+                android:id="@+id/contra"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:ems="10"
+                android:hint=" Contraseña"
+                android:inputType="textPassword"
+                android:textColorHint="#000"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/contra2"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:drawableLeft="@drawable/ic_done_all_black_24dp"
+                android:ems="10"
+                android:hint=" Confirmar Contraseña"
+                android:inputType="textPassword"
+                android:textColorHint="#000"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="34dp" />
+
+            <Button
+                android:id="@+id/btnlogin"
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:background="#4CAF50"
+                android:onClick="registrar"
+                android:text="Registrar"
+                android:textColor="#fff"
+                android:textColorLink="#00FAF4F4"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="34dp" />
+
+            <TextView
+                android:id="@+id/textView56"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="volver"
+                android:text="Ya dispongo de un usuario"
+                android:textColor="#000" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="34dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="49dp" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|center"
+                android:text="®Copyright-OMSA 2019"
+                android:textColor="#000"
+                android:textStyle="bold|italic" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="26dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

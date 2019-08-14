@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "431164939491",
+    "firebase_url": "https://omsa-servicios.firebaseio.com",
+    "project_id": "omsa-servicios",
+    "storage_bucket": "omsa-servicios.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431164939491:android:8a1d7c4576ec3f1d",
+        "android_client_info": {
+          "package_name": "addfree.osbbyx.omsa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431164939491-gcked01s6f1lfjhc08frf4sgku4os9l4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "addfree.osbbyx.omsa",
+            "certificate_hash": "bdef83e9d962f4b1b77acede814b098a88a4a990"
+          }
+        },
+        {
+          "client_id": "431164939491-r03t5bntnervk916eaidnlopv41hu4uo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgjgej5owzmcUrBN4QGXRev-KlPzQM10Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "431164939491-r03t5bntnervk916eaidnlopv41hu4uo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

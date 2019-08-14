@@ -89,7 +89,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:gravity="center"
-                android:hint="Fecha en que se entrago la propuesta"
+                android:hint="Fecha de la perdida"
                 android:inputType="date" />
 
             <TextView
@@ -99,13 +99,13 @@
                 android:gravity="center" />
 
             <EditText
-                android:id="@+id/editText5"
+                android:id="@+id/editText10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:gravity="center"
-                android:hint="Fecha en que se entrago la propuesta"
-                android:inputType="date" />
+                android:hint="Hora aproximada"
+                android:inputType="number" />
 
             <TextView
                 android:id="@+id/textView7"
@@ -127,7 +127,7 @@
 
             <Spinner
                 android:id="@+id/sp1"
-                android:layout_width="match_parent"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:gravity="center" />
 
@@ -148,7 +148,7 @@
                 android:layout_height="12dp" />
 
             <EditText
-                android:id="@+id/editText6"
+                android:id="@+id/nombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
