@@ -11,11 +11,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class Register extends AppCompatActivity {
 
@@ -28,9 +32,12 @@ public class Register extends AppCompatActivity {
     private ProgressDialog progressDialog;
     private Button btnRegistrar;
     private String cont = "" ;
+    private EditText admin;
 
     private FirebaseAuth firebaseAuth;
-
+    FirebaseAuth auth = FirebaseAuth.getInstance();
+    FirebaseUser user = auth.getCurrentUser();
+    private DatabaseReference Clases;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,9 +45,11 @@ public class Register extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
 
+            Clases = FirebaseDatabase.getInstance().getReference("usuarios");
 
         //inicializamos el objeto firebaseAuth
         firebaseAuth = FirebaseAuth.getInstance();
+        /*myRef.getDatabase().getReference(user.getEmail());*/
 
         //Referenciamos los views
         name = (EditText) findViewById(R.id.nombre);
@@ -50,9 +59,12 @@ public class Register extends AppCompatActivity {
         old = (EditText) findViewById(R.id.edad);
         pass2 = (EditText) findViewById(R.id.contra2);
         btnRegistrar = (Button) findViewById(R.id.btnlogin);
+        admin = (EditText) findViewById(R.id.admin);
 
         progressDialog = new ProgressDialog(this);
     }
+
+
 
     private void registrarUsuario(){
 
@@ -94,11 +106,14 @@ public class Register extends AppCompatActivity {
             Toast.makeText(this,"La contraseña debe ser mayor de 6 digitos",Toast.LENGTH_LONG).show();
             return;
         } else if(contrasena2.equals(password)){
-        }else{
+        }else{//713400
             Toast.makeText(this,"Las contraseña no son iguales",Toast.LENGTH_LONG).show();
             return;
         }
 
+        //Registrando administracion
+
+        registrarClase();
 
         progressDialog.setMessage("Realizando registro en linea...");
         progressDialog.show();
@@ -132,14 +147,38 @@ public class Register extends AppCompatActivity {
 
     }
 
+    public void registrarClase(){
+        int ad = 1;
+        String nombre = name.getText().toString();
+        String telefono = phone.getText().toString();
+        String edad = old.getText().toString();
+        String email = gmail.getText().toString();
+        if(admin.getText().toString().equals("")){
+        }else{
+            String adm = admin.getText().toString();
+            ad = new Integer(adm);
+        }
+
+        String id = Clases.push().getKey();
+
+
+        Classes clas = new Classes(id,email,nombre,telefono,edad,ad);
+        Clases.child("Usuarios").child(id).setValue(clas);
+
+    }
+
     public void registrar(View view){
         registrarUsuario();
+
         if(cont == "activo"){
+            registrarClase();
             Intent regi = new Intent(Register.this, Login.class);
             startActivity(regi);
             finish();
         }
     }
+
+
 
     public void volver(View view){
         Intent volver = new Intent(Register.this, Login.class);

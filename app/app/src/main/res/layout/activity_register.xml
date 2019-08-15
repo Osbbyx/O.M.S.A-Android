@@ -59,7 +59,7 @@
                 android:drawableLeft="@drawable/ic_account_circle_black_24dp"
                 android:ems="10"
                 android:gravity="center|left"
-                android:hint=" Nombre"
+                android:hint=" Nombre completo"
                 android:inputType="textPersonName"
                 android:textColorHint="#000"
                 android:textSize="14sp" />
@@ -159,22 +159,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="34dp" />
 
-            <TextView
-                android:id="@+id/textView56"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:onClick="volver"
-                android:text="Ya dispongo de un usuario"
-                android:textColor="#000" />
-
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="34dp" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="49dp" />
 
             <TextView
                 android:id="@+id/textView20"
@@ -185,9 +172,13 @@
                 android:textColor="#000"
                 android:textStyle="bold|italic" />
 
-            <Space
+            <EditText
+                android:id="@+id/admin"
                 android:layout_width="match_parent"
-                android:layout_height="26dp" />
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:visibility="visible" />
         </LinearLayout>
     </ScrollView>
 

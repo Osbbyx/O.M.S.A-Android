@@ -39,7 +39,7 @@
                 android:layout_height="21dp" />
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/et1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -54,10 +54,15 @@
                 android:gravity="center" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/et2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clickable="false"
+                android:editable="false"
                 android:ems="10"
+                android:enabled="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
                 android:gravity="center"
                 android:hint="Telefono"
                 android:inputType="phone" />
@@ -69,7 +74,7 @@
                 android:gravity="center" />
 
             <EditText
-                android:id="@+id/contra"
+                android:id="@+id/et3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -84,10 +89,15 @@
                 android:gravity="center" />
 
             <EditText
-                android:id="@+id/editText8"
+                android:id="@+id/et4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clickable="false"
+                android:editable="false"
                 android:ems="10"
+                android:enabled="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
                 android:gravity="center"
                 android:hint="Nombre del solicitante"
                 android:inputType="textPersonName" />
@@ -99,10 +109,15 @@
                 android:gravity="center" />
 
             <EditText
-                android:id="@+id/editText4"
+                android:id="@+id/et5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clickable="false"
+                android:editable="false"
                 android:ems="10"
+                android:enabled="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
                 android:gravity="center"
                 android:hint="Correo Electronico"
                 android:inputType="textEmailAddress" />
@@ -114,7 +129,7 @@
                 android:gravity="center" />
 
             <EditText
-                android:id="@+id/editText14"
+                android:id="@+id/et6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -129,7 +144,7 @@
                 android:gravity="center" />
 
             <EditText
-                android:id="@+id/editText9"
+                android:id="@+id/et7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -155,17 +170,71 @@
                 android:layout_height="29dp" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#4CAF50"
-                android:onClick="atras"
+                android:onClick="onClik"
                 android:text="Finalizar"
                 android:textColor="#fff" />
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="29dp" />
+
+            <EditText
+                android:id="@+id/ev1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/ev2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/ev3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/ev4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/ev5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/ev6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:visibility="gone" />
 
         </LinearLayout>
     </ScrollView>

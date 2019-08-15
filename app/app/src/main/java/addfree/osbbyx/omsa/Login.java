@@ -19,6 +19,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
 
 public class Login extends AppCompatActivity {
 
@@ -32,7 +34,12 @@ public class Login extends AppCompatActivity {
 
 
     //Declaramos un objeto firebaseAuth
+
+
+
     private FirebaseAuth firebaseAuth;
+    private DatabaseReference myRef;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +50,7 @@ public class Login extends AppCompatActivity {
 
         //inicializamos el objeto firebaseAuth
         firebaseAuth = FirebaseAuth.getInstance();
+
 
         //Referenciamos los views
         TextEmail = (EditText) findViewById(R.id.nombre);
@@ -57,6 +65,8 @@ public class Login extends AppCompatActivity {
         SharedPreferences preferences = getSharedPreferences("datos",Context.MODE_PRIVATE);
         TextEmail.setText(preferences.getString("mail", ""));
         TextPassword.setText(preferences.getString("pass", ""));
+
+        checkbox.setChecked(true);
 
     }
 
@@ -126,6 +136,7 @@ public class Login extends AppCompatActivity {
         }else{
             TextEmail.setText("");
             TextPassword.setText("");
+
         }
         loguearUsuario();
         if(cont == "activo") {
