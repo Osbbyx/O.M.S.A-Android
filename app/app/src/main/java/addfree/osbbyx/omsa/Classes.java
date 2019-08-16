@@ -10,25 +10,25 @@ public class Classes {
     FirebaseAuth auth = FirebaseAuth.getInstance();
     FirebaseUser user = auth.getCurrentUser();
     String email = user.getEmail().toString();
-    int ad;
+    String adss;
 
 
-    public Classes(String id,String email, String nombre, String telefono, String edad, int ad) {
+    public Classes(String id,String email, String nombre, String telefono, String edad, String adss) {
         this.id = id;
         this.email = email;
         this.nombre = nombre;
         this.telefono = telefono;
         this.edad = edad;
-        this.ad = ad;
+        this.adss = adss;
     }
 
-    public Classes(String email, String nombre, String telefono, String edad, int ad) {
+    public Classes(String email, String nombre, String telefono, String edad, String adss) {
         this.id = id;
         this.email = email;
         this.nombre = nombre;
         this.telefono = telefono;
         this.edad = edad;
-        this.ad = ad;
+        this.adss = adss;
     }
     public String getId(){
         return id;
@@ -49,7 +49,7 @@ public class Classes {
     public String getEdad() {
         return edad;
     }
-    public int getAd(){
-        return ad;
+    public String getAdss(){
+        return adss;
     }
 }

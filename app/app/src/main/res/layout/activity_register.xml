@@ -148,7 +148,7 @@
                 android:id="@+id/btnlogin"
                 android:layout_width="157dp"
                 android:layout_height="wrap_content"
-                android:background="#4CAF50"
+                android:background="@drawable/bordes"
                 android:onClick="registrar"
                 android:text="Registrar"
                 android:textColor="#fff"
@@ -177,8 +177,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="number"
-                android:visibility="visible" />
+                android:inputType="textPersonName" />
+
         </LinearLayout>
     </ScrollView>
 

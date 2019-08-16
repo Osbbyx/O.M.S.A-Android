@@ -7,15 +7,16 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_speaker_notes_black_24dp"
-            android:title="Reclamacion de objetos extraviados" />
+            android:title="Reclamacion de objetos" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_directions_bus_black_2444dp"
-            android:title="Solicitud de servicios especial de autobuses" />
+            android:title="servicios de autobuses" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_search_black_24dp"
-            android:title="Consulta de objetos extraviados" />
+            android:title="Consulta de objetos extraviados"
+            android:visible="false" />
     </group>
 
     <item android:title="Comunicacion">

@@ -148,7 +148,7 @@ public class Register extends AppCompatActivity {
     }
 
     public void registrarClase(){
-        int ad = 1;
+        String adss = "1";
         String nombre = name.getText().toString();
         String telefono = phone.getText().toString();
         String edad = old.getText().toString();
@@ -156,13 +156,13 @@ public class Register extends AppCompatActivity {
         if(admin.getText().toString().equals("")){
         }else{
             String adm = admin.getText().toString();
-            ad = new Integer(adm);
+            adss = adm;
         }
 
         String id = Clases.push().getKey();
 
 
-        Classes clas = new Classes(id,email,nombre,telefono,edad,ad);
+        Classes clas = new Classes(id,email,nombre,telefono,edad,adss);
         Clases.child("Usuarios").child(id).setValue(clas);
 
     }

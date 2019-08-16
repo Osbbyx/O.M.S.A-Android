@@ -4,6 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
     tools:context=".RealMainActivity">
 
     <LinearLayout
@@ -22,16 +25,65 @@
             android:layout_height="wrap_content"
             app:srcCompat="@mipmap/logo" />
 
+        <LinearLayout
+            android:id="@+id/btnespecial"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btno2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/bordes"
+                android:drawableTop="@drawable/ic_visibility_white_75dp"
+                android:drawableBottom="@android:drawable/arrow_down_float"
+                android:drawingCacheQuality="high"
+                android:gravity="center"
+                android:onClick="servicio3"
+                android:text="Consulta de objetos extraviados"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btno1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bordes"
+                android:drawableTop="@drawable/ic_border_color_white_75dp"
+                android:drawableBottom="@android:drawable/arrow_down_float"
+                android:drawingCacheQuality="high"
+                android:gravity="center"
+                android:onClick="servicio3"
+                android:text="Registrar objetos extraviados"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </LinearLayout>
+
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_marginTop="15dp"
             android:layout_weight="1"
-            android:background="#43B147"
-            android:drawableTop="@drawable/ic_speaker_notes_black_105dp"
+            android:background="@drawable/bordes"
+            android:drawableTop="@drawable/ic_important_devices_white_75dp"
+            android:drawableBottom="@android:drawable/arrow_down_float"
             android:drawingCacheQuality="high"
             android:gravity="center"
             android:onClick="servicio1"
+            android:paddingTop="30dp"
+            android:paddingBottom="10dp"
             android:text="Reclamacion de objetos extraviados"
             android:textColor="@android:color/background_light"
             android:textSize="24sp"
@@ -41,35 +93,29 @@
             android:id="@+id/button6"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_marginTop="15dp"
             android:layout_weight="1"
-            android:background="#8BCE3E"
-            android:drawableTop="@drawable/ic_directions_bus_black_24dp"
+            android:background="@drawable/bordes"
+            android:drawableTop="@drawable/ic_directions_bus_white_75dp"
+            android:drawableBottom="@android:drawable/arrow_down_float"
             android:drawingCacheQuality="high"
             android:gravity="center"
             android:onClick="servicio2"
+            android:paddingTop="30dp"
+            android:paddingBottom="10dp"
             android:text="solicitud de servicios especial de autobuses"
             android:textColor="@android:color/background_light"
             android:textSize="24sp"
             android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/button10"
+        <EditText
+            android:id="@+id/et1"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="#418843"
-            android:drawableTop="@drawable/ic_search_black_24dp"
-            android:drawingCacheQuality="high"
-            android:gravity="center"
-            android:onClick="servicio3"
-            android:text="Consulta de objetos extraviados"
-            android:textColor="@android:color/background_light"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:visibility="gone" />
 
     </LinearLayout>
 </RelativeLayout>

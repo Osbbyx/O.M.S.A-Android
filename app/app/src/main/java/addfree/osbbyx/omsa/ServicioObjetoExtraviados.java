@@ -106,10 +106,12 @@ public class ServicioObjetoExtraviados extends AppCompatActivity {
                                 String edad = user.getEdad();
                                 String emaill = user.getEmaill();
 
+
                                 Log.e("NombreUsuario", "" + nombre);
                                 Log.e("TelefonoUsuario", "" + telefono);
                                 Log.e("edadUsuario", "" + edad);
                                 Log.e("emaillUsuario",""+emaill);
+
                                 Log.e("Datos:", "" + snapshot.getValue());
 
                             if (emaill.equals(origin.getEmail())) {

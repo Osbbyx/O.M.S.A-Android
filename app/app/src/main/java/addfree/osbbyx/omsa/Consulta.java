@@ -6,6 +6,15 @@ public class Consulta {
     private String telefono;
     private String edad;
     private String emaill;
+    private String adss;
+
+    public String getAdss() {
+        return adss;
+    }
+
+    public void setAdss(String adss) {
+        this.adss = adss;
+    }
 
     public String getEmaill() {
         return emaill;
@@ -38,4 +47,6 @@ public class Consulta {
     public String getEdad() {
         return edad;
     }
+
+
 }

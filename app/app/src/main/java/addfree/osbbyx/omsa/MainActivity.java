@@ -2,8 +2,10 @@ package addfree.osbbyx.omsa;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.util.Log;
 import android.view.View;
 import android.support.v4.view.GravityCompat;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -14,6 +16,17 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -24,6 +37,11 @@ import java.sql.Statement;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    FirebaseAuth auth = FirebaseAuth.getInstance();
+    FirebaseUser origin = auth.getCurrentUser();
+    private DatabaseReference Clases;
+    EditText t1 ;
+    LinearLayout special;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,11 +68,68 @@ public class MainActivity extends AppCompatActivity
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
 
+        Clases = FirebaseDatabase.getInstance().getReference("usuarios");
+
+        t1 = (EditText)findViewById(R.id.et1) ;
+        special = (LinearLayout)findViewById(R.id.btnespecial);
 
 
 
+        //-------------------------------------------------------------------------------------------------------------------------
+        Clases.child("Usuarios").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
+                for (final DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    Clases.child("Usuarios").child(snapshot.getKey()).addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                            //Datos a recibir
+
+                            Consulta user = snapshot.getValue(Consulta.class);
+                            String nombre = user.getNombre();
+                            String telefono = user.getTelefono();
+                            String edad = user.getEdad();
+                            String emaill = user.getEmaill();
+                            String adss = user.getAdss();
+
+
+                            Log.e("NombreUsuario", "" + nombre);
+                            Log.e("TelefonoUsuario", "" + telefono);
+                            Log.e("edadUsuario", "" + edad);
+                            Log.e("emaillUsuario", "" + emaill);
+                            Log.e("adUsuario", "" + adss);
+                            Log.e("Datos:", "" + snapshot.getValue());
+
+                            if (emaill.equals(origin.getEmail())) {
+                                t1.setText(adss);
+                                String codigo = t1.getText().toString();
+                                if(codigo.equals("713400")){
+                                    special.setVisibility(View.VISIBLE);
+                                }
+                            }
+
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+
+        //-------------------------------------------------------------------------------------------------------------------------
     }
+
 
 
 

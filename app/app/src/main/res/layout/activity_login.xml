@@ -99,7 +99,7 @@
                 android:id="@+id/btnlogin"
                 android:layout_width="157dp"
                 android:layout_height="wrap_content"
-                android:background="#4CAF50"
+                android:background="@drawable/bordes"
                 android:onClick="login"
                 android:text="iniciar sesion"
                 android:textColor="#fff"
