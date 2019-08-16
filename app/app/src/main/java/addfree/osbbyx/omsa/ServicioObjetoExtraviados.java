@@ -1,14 +1,20 @@
 package addfree.osbbyx.omsa;
 
+import android.app.DatePickerDialog;
+import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.DatePicker;
 import android.widget.Spinner;
 
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Properties;
 import javax.mail.Authenticator;
 import javax.mail.Message;
@@ -24,6 +30,7 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -42,7 +49,8 @@ public class ServicioObjetoExtraviados extends AppCompatActivity {
     FirebaseAuth auth = FirebaseAuth.getInstance();
     FirebaseUser origin = auth.getCurrentUser();
     private DatabaseReference Clases;
-    EditText t1,t2,t3;
+    EditText t1,t2,t3,t4,t5,t6,t3m,t7;
+    private int dia,mes,ano,hora,minutos;
     //-------------------------------------------------------------------------------------------------------------------------
 
     //nuevo
@@ -51,6 +59,7 @@ public class ServicioObjetoExtraviados extends AppCompatActivity {
     Context context = null;
     EditText reciep, sub, msg,reciep1, sub1, msg1;
     String rec, subject, textMessage,rec1, subject1, textMessage1;
+    Date currentTime = Calendar.getInstance().getTime();
 
     //-------------------------------------------------------------------------------------------------------------------------
     @Override
@@ -75,9 +84,15 @@ public class ServicioObjetoExtraviados extends AppCompatActivity {
         //nuevo
         context = this;
 
+
         t1 = (EditText)findViewById(R.id.et1);
         t2 = (EditText)findViewById(R.id.et2);
         t3 = (EditText)findViewById(R.id.et3);
+        t3m = (EditText)findViewById(R.id.et3m);
+        t4 = (EditText)findViewById(R.id.et4);
+        t5 = (EditText)findViewById(R.id.et5);
+        t6 = (EditText)findViewById(R.id.et6);
+        t7 = (EditText)findViewById(R.id.momento);
 
         reciep = (EditText) findViewById(R.id.ev1);
         sub = (EditText) findViewById(R.id.ev2);
@@ -85,6 +100,8 @@ public class ServicioObjetoExtraviados extends AppCompatActivity {
         reciep1 = (EditText) findViewById(R.id.ev5);
         sub1 = (EditText) findViewById(R.id.ev5);
         msg1 = (EditText) findViewById(R.id.ev6);
+
+
 
        /* login.setOnClickListener(this);*/
 
@@ -147,36 +164,60 @@ public class ServicioObjetoExtraviados extends AppCompatActivity {
     //nuevo
 
     public void onClick(View v) {
-        reciep.setText(origin.getEmail());
-        rec = reciep.getText().toString();
-        sub.setText("OMSA");
-        subject = sub.getText().toString();
-        msg.setText("Se a hecho la reclamacion con exito, Gracias por utilizar nuestros servicios.(No responder a este mensaje)");
-        textMessage = msg.getText().toString();
-        reciep1.setText("omsaapp@gmail.com");
-        rec1 = reciep1.getText().toString();
-        sub1.setText("Reclamacion de objetos extraviados. (OMSA APP)");
-        subject1 = sub1.getText().toString();
-        msg1.setText("todo");
-        textMessage1 = msg1.getText().toString();
+        t7.setText(currentTime.toString());
 
-        Properties props = new Properties();
-        props.put("mail.smtp.host", "smtp.gmail.com");
-        props.put("mail.smtp.socketFactory.port", "465");
-        props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
-        props.put("mail.smtp.auth", "true");
-        props.put("mail.smtp.port", "465");
+        //---------------------CONDICIONES-----------------------------------------------------------------------------------------------------------------
 
-        session = Session.getDefaultInstance(props, new Authenticator() {
-            protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("omsaapp@gmail.com", "omsaticontrasena123");
-            }
-        });
+        if(TextUtils.isEmpty(t4.getText())) {
+            Toast.makeText(this, "Se debe ingresar la fecha de perdida", Toast.LENGTH_LONG).show();
+            return;
+        }
+        else  if(TextUtils.isEmpty(t5.getText())) {
+            Toast.makeText(this, "Se debe ingresar una hora aproximada", Toast.LENGTH_LONG).show();
+            return;
+        }else  if(TextUtils.isEmpty(t6.getText())) {
+            Toast.makeText(this, "Se debe ingresar una descripcion", Toast.LENGTH_LONG).show();
+            return;
+        }else{
+            // mensajes al email----------------------------------------------------------------------------------------------------------------------------------------------------
+            reciep.setText(origin.getEmail());
+            rec = reciep.getText().toString();
+            sub.setText("OMSA");
+            subject = sub.getText().toString();
+            msg.setText("Se a hecho la reclamacion con exito!! señor(a) "+t1.getText()+ ", Gracias por utilizar nuestros servicios." +
+                    "<br>"+"<br>"+"Este es un mensaje de confirmacion (No responder a este mensaje)");
+            textMessage = msg.getText().toString();
+            reciep1.setText("omsaapp@gmail.com");
+            rec1 = reciep1.getText().toString();
+            sub1.setText("Reclamacion de objetos extraviados. (OMSA APP)");
+            subject1 = sub1.getText().toString();
+            msg1.setText("Se a hecho una reclamacion con los siguientes datos: "+"<br>"+"<br>"+"Nombre: "+t1.getText()+"<br>"+"Telefono: "+t2.getText()+"<br>"+"Email: "+t3.getText()
+                    +"<br>"+"Ficha de autobus: "+t3m.getText()+"<br>"+"Fecha de la perdida: "+t4.getText()+"<br>"+"Hora aproximada: "+t5.getText()+"<br>"+"Corredor: "+sp1.getSelectedItem().toString()+
+                    "<br>"+"Descripcion del objeto: "+t6.getText()+"<br>"+"<br>"+"Esta reclamacion fue realizada el ("+t7.getText()+") Mediante la App mobile de la OMSA");
+            textMessage1 = msg1.getText().toString();
 
-        pdialog = ProgressDialog.show(context, "", "Procesando peticion...", true);
+            Properties props = new Properties();
+            props.put("mail.smtp.host", "smtp.gmail.com");
+            props.put("mail.smtp.socketFactory.port", "465");
+            props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+            props.put("mail.smtp.auth", "true");
+            props.put("mail.smtp.port", "465");
 
-        RetreiveFeedTask task = new RetreiveFeedTask();
-        task.execute();
+            session = Session.getDefaultInstance(props, new Authenticator() {
+                protected PasswordAuthentication getPasswordAuthentication() {
+                    return new PasswordAuthentication("omsaapp@gmail.com", "omsaticontrasena123");
+                }
+            });
+
+            pdialog = ProgressDialog.show(context, "", "Procesando peticion...", true);
+
+            RetreiveFeedTask task = new RetreiveFeedTask();
+            task.execute();
+//------------------------------------------------------------------------------------------------------------------------------------
+        }
+
+        //-------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
     }
@@ -228,6 +269,38 @@ public class ServicioObjetoExtraviados extends AppCompatActivity {
             startActivity(home);
             finish();
         }
+    }
+
+
+
+    public void fecha(View view){
+        final Calendar c= Calendar.getInstance();
+        dia=c.get(Calendar.DAY_OF_MONTH);
+        mes=c.get(Calendar.MONTH);
+        ano=c.get(Calendar.YEAR);
+        DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                t4.setText(dayOfMonth+"/"+(month+1)+"/"+year);
+            }
+        }
+        ,ano,mes,dia);
+        datePickerDialog.show();
+    }
+
+    public void hora(View view){
+        final Calendar c= Calendar.getInstance();
+        hora=c.get(Calendar.HOUR_OF_DAY);
+        minutos=c.get(Calendar.MINUTE);
+
+        TimePickerDialog timePickerDialog = new TimePickerDialog(this, new TimePickerDialog.OnTimeSetListener() {
+            @Override
+            public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+                t5.setText(hourOfDay+":"+minute);
+            }
+        },hora
+         ,minutos,false      );
+        timePickerDialog.show();
     }
 }
 

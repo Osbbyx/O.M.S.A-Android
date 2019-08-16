@@ -19,7 +19,6 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 
 public class Login extends AppCompatActivity {
@@ -53,7 +52,7 @@ public class Login extends AppCompatActivity {
 
 
         //Referenciamos los views
-        TextEmail = (EditText) findViewById(R.id.nombre);
+        TextEmail = (EditText) findViewById(R.id.et6);
         TextPassword = (EditText) findViewById(R.id.contra);
 
         btnRegistrar = (TextView) findViewById(R.id.botonRegistrar);

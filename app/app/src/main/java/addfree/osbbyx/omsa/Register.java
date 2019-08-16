@@ -52,7 +52,7 @@ public class Register extends AppCompatActivity {
         /*myRef.getDatabase().getReference(user.getEmail());*/
 
         //Referenciamos los views
-        name = (EditText) findViewById(R.id.nombre);
+        name = (EditText) findViewById(R.id.et6);
         pass = (EditText) findViewById(R.id.contra);
         phone = (EditText) findViewById(R.id.telefono);
         gmail = (EditText) findViewById(R.id.email);

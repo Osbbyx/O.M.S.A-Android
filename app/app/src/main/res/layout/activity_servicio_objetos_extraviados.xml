@@ -79,7 +79,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:gravity="center"
-                android:hint="Celular"
+                android:hint="Celular (Opcional)"
                 android:inputType="phone" />
 
             <TextView
@@ -133,9 +133,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:focusable="false"
                 android:gravity="center"
                 android:hint="Fecha del Servicio"
-                android:inputType="date" />
+                android:inputType="date"
+                android:onClick="fecha" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -157,7 +159,7 @@
                 android:layout_height="12dp" />
 
             <EditText
-                android:id="@+id/nombre"
+                android:id="@+id/et8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -234,6 +236,14 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text="Name"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/momento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
                 android:visibility="gone" />
 
         </LinearLayout>

@@ -100,13 +100,29 @@
                 android:gravity="center" />
 
             <EditText
-                android:id="@+id/et4"
+                android:id="@+id/et3m"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:gravity="center"
+                android:hint="Ficha del Autobus(Opcional)"
+                android:inputType="textPersonName" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <EditText
+                android:id="@+id/et4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusable="false"
+                android:gravity="center"
                 android:hint="Fecha de la perdida"
-                android:inputType="date" />
+                android:inputType="date"
+                android:longClickable="false"
+                android:onClick="fecha" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -119,9 +135,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:focusable="false"
                 android:gravity="center"
                 android:hint="Hora aproximada"
-                android:inputType="number" />
+                android:inputType="number"
+                android:onClick="hora" />
 
             <TextView
                 android:id="@+id/textView7"
@@ -130,7 +148,7 @@
                 android:gravity="center" />
 
             <TextView
-                android:id="@+id/uyygig"
+                android:id="@+id/sdfsdf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -152,20 +170,7 @@
                 android:layout_height="12dp" />
 
             <EditText
-                android:id="@+id/editText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Ficha del Autobus(Opcional)"
-                android:inputType="textPersonName" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="12dp" />
-
-            <EditText
-                android:id="@+id/nombre"
+                android:id="@+id/et6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -242,6 +247,14 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text="Name"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/momento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
                 android:visibility="gone" />
 
         </LinearLayout>

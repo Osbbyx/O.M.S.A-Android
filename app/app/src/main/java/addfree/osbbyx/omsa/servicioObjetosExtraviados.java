@@ -1,5 +1,6 @@
 package addfree.osbbyx.omsa;
 
+import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -7,10 +8,12 @@ import android.os.AsyncTask;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -23,6 +26,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Properties;
 
 import javax.mail.Authenticator;
@@ -40,8 +45,9 @@ public class servicioObjetosExtraviados extends AppCompatActivity {
     FirebaseAuth auth = FirebaseAuth.getInstance();
     FirebaseUser origin = auth.getCurrentUser();
     private DatabaseReference Clases;
-
-    EditText t1,t2,t3,t4,t5,t6;
+    private int dia,mes,ano;
+    EditText t1,t2,t3,t4,t5,t6,t7,t8,t9;
+    Date currentTime = Calendar.getInstance().getTime();
 
     //nuevo
     Session session = null;
@@ -60,9 +66,19 @@ public class servicioObjetosExtraviados extends AppCompatActivity {
 
         Clases = FirebaseDatabase.getInstance().getReference("usuarios");
 
+
+
+        t1 = (EditText)findViewById(R.id.et1);
         t2 = (EditText)findViewById(R.id.et2);
+        t3 = (EditText)findViewById(R.id.et3);
         t4 = (EditText)findViewById(R.id.et4);
         t5 = (EditText)findViewById(R.id.et5);
+        t6 = (EditText)findViewById(R.id.et6);
+        t7 = (EditText)findViewById(R.id.et7);
+        t8 = (EditText)findViewById(R.id.et8);
+        t9 = (EditText)findViewById(R.id.momento);
+
+
 
 
         //-------------------------------------------------------------------------------------------------------------------------
@@ -136,38 +152,65 @@ public class servicioObjetosExtraviados extends AppCompatActivity {
 
 
 
-//nuevo
+//nuevo--------------------------------------------------------------------------------------------------------------------------------------
     public void onClik(View v) {
-        reciep.setText(origin.getEmail());
-        rec = reciep.getText().toString();
-        sub.setText("OMSA");
-        subject = sub.getText().toString();
-        msg.setText("Se a hecho la solicitud con exito, Gracias por utilizar nuestros servicios.(No responder a este mensaje)");
-        textMessage = msg.getText().toString();
-        reciep1.setText("omsaapp@gmail.com");
-        rec1 = reciep1.getText().toString();
-        sub1.setText("Solicitud de servicio especial de autobuses. (OMSA APP)");
-        subject1 = sub1.getText().toString();
-        msg1.setText("todo");
-        textMessage1 = msg1.getText().toString();
+        t9.setText(currentTime.toString());
 
-        Properties props = new Properties();
-        props.put("mail.smtp.host", "smtp.gmail.com");
-        props.put("mail.smtp.socketFactory.port", "465");
-        props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
-        props.put("mail.smtp.auth", "true");
-        props.put("mail.smtp.port", "465");
+        //---------------------CONDICIONES-----------------------------------------------------------------------------------------------------------------
+        if(TextUtils.isEmpty(t1.getText())){
+            Toast.makeText(this,"Se debe ingresar el nombre de la institucion",Toast.LENGTH_LONG).show();
+            return;
+        }else if(TextUtils.isEmpty(t6.getText())){
+            Toast.makeText(this,"Se debe ingresar la fecha del servicio solicitado",Toast.LENGTH_LONG).show();
+            return;
+        }else if(TextUtils.isEmpty(t7.getText())){
+            Toast.makeText(this,"Se debe ingresar un Destino",Toast.LENGTH_LONG).show();
+            return;
+        }else if(TextUtils.isEmpty(t8.getText())){
+            Toast.makeText(this,"Se debe ingresar una Descripcion",Toast.LENGTH_LONG).show();
+            return;
+        }else{
+            // mensajes al email---------------------------------------------------------------------------------------------------------------------------------------------
+            reciep.setText(origin.getEmail());
+            rec = reciep.getText().toString();
+            sub.setText("OMSA");
+            subject = sub.getText().toString();
+            msg.setText("Se a hecho la solicitud con exito señor(a) "+t4.getText()+", Gracias por utilizar nuestros servicios." +"<br>"+"<br>"+
+                    "Este es un mensaje de confirmacion (No responder a este mensaje)");
+            textMessage = msg.getText().toString();
+            reciep1.setText("omsaapp@gmail.com");
+            rec1 = reciep1.getText().toString();
+            sub1.setText("Solicitud de servicio especial de autobuses. (OMSA APP)");
+            subject1 = sub1.getText().toString();
+            msg1.setText("Se a hecho una solicitud con los siguientes datos:"+"<br>"+"<br>"+"Nombre de la institucion: "+t1.getText()+"<br>"+"Telefono: "+t2.getText()+"<br>"+"Celular: "
+                    +t3.getText()+"<br>"+"Nombre del solicitante: "+t4.getText()+"<br>"+"Email: "+t5.getText()+"<br>"+"Fecha del servicio: "+t6.getText()+"<br>"+"Destino: "+t7.getText()+
+                    "<br>"+"Descripcion de solicitud: "+t8.getText()+"<br>"+"<br>"+"Esta solicitud fue realizada el ("+t9.getText()+") por medio de la App mobile de la OMSA");
+            textMessage1 = msg1.getText().toString();
 
-        session = Session.getDefaultInstance(props, new Authenticator() {
-            protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("omsaapp@gmail.com", "omsaticontrasena123");
-            }
-        });
+            Properties props = new Properties();
+            props.put("mail.smtp.host", "smtp.gmail.com");
+            props.put("mail.smtp.socketFactory.port", "465");
+            props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+            props.put("mail.smtp.auth", "true");
+            props.put("mail.smtp.port", "465");
 
-        pdialog = ProgressDialog.show(context, "", "Procesando peticion...", true);
+            session = Session.getDefaultInstance(props, new Authenticator() {
+                protected PasswordAuthentication getPasswordAuthentication() {
+                    return new PasswordAuthentication("omsaapp@gmail.com", "omsaticontrasena123");
+                }
+            });
 
-        RetreiveFeedTask task = new RetreiveFeedTask();
-        task.execute();
+            pdialog = ProgressDialog.show(context, "", "Procesando peticion...", true);
+
+            RetreiveFeedTask task = new RetreiveFeedTask();
+            task.execute();
+
+//--------------------------------------------------------------------------------------------------------------------------------
+        }
+
+
+        //-------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
     }
@@ -219,6 +262,21 @@ public class servicioObjetosExtraviados extends AppCompatActivity {
             startActivity(home);
             finish();
         }
+    }
+
+    public void fecha(View view){
+        final Calendar c= Calendar.getInstance();
+        dia=c.get(Calendar.DAY_OF_MONTH);
+        mes=c.get(Calendar.MONTH);
+        ano=c.get(Calendar.YEAR);
+        DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                t6.setText(dayOfMonth+"/"+(month+1)+"/"+year);
+            }
+        }
+                ,ano,mes,dia);
+        datePickerDialog.show();
     }
 
 
