@@ -8,8 +8,8 @@ public class Classes {
 
     String nombre, telefono, edad,id;
     FirebaseAuth auth = FirebaseAuth.getInstance();
-    FirebaseUser user = auth.getCurrentUser();
-    String email = user.getEmail().toString();
+    FirebaseUser origin = auth.getCurrentUser();
+    String email = origin.getEmail().toString();
     String adss;
 
 

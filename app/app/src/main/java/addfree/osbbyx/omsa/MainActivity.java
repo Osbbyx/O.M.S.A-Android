@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity
                                 t1.setText(adss);
                                 String codigo = t1.getText().toString();
                                 if(codigo.equals("713400")){
-                                    special.setVisibility(View.VISIBLE);
+                                   // special.setVisibility(View.VISIBLE);
                                 }
                             }
 
@@ -178,12 +178,20 @@ public class MainActivity extends AppCompatActivity
             Intent servicio2 = new Intent(this,servicioObjetosExtraviados.class);
             startActivity(servicio2);
         } else if (id == R.id.nav_slideshow) {
-            Intent servicio3 = new Intent(this,ServicioServicioEspecialDeAutobuses.class);
+            Intent servicio3 = new Intent(this,aNoticias.class);
             startActivity(servicio3);
+        } else if (id == R.id.nav_parada){
+            Intent servicio4 = new Intent(this,parada.class);
+            startActivity(servicio4);
         }else if (id == R.id.nav_share) {
-
+            Intent nosotros = new Intent(this,SobreNosotros.class);
+            startActivity(nosotros);
+        }else if (id == R.id.nav_contacto) {
+            Intent contacto = new Intent(this,Contacto.class);
+            startActivity(contacto);
         } else if (id == R.id.nav_send) {
-
+            Intent app = new Intent(this,AcercaDeLaApp.class);
+            startActivity(app);
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -202,7 +210,11 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void servicio3(View view){
-        Intent ir = new Intent(this,ServicioServicioEspecialDeAutobuses.class);
+        Intent ir = new Intent(this,aNoticias.class);
+        startActivity(ir);
+    }
+    public void servicio4(View view){
+        Intent ir = new Intent(this,parada.class);
         startActivity(ir);
     }
 }

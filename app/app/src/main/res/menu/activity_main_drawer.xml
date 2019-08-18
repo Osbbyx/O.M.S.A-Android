@@ -14,23 +14,32 @@
             android:title="servicios de autobuses" />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_search_black_24dp"
-            android:title="Consulta de objetos extraviados"
-            android:visible="false" />
+            android:icon="@drawable/ic_live_tv_black_45dp"
+            android:title="Noticias"
+            android:visible="true" />
+        <item
+            android:id="@+id/nav_parada"
+            android:icon="@drawable/ic_nature_people_black_60dp"
+            android:title="Parada mas cercana"
+            android:visible="true" />
     </group>
 
-    <item android:title="Comunicacion">
+    <item
+        android:title="Comunicacion"
+        android:visible="true">
         <menu>
             <item
                 android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Rutas"
-                android:visible="false" />
+                android:icon="@android:drawable/ic_menu_myplaces"
+                android:title="Sobre nosotros" />
+            <item
+                android:id="@+id/nav_contacto"
+                android:icon="@android:drawable/ic_menu_call"
+                android:title="Contacto" />
             <item
                 android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Contactanos"
-                android:visible="false" />
+                android:icon="@android:drawable/ic_menu_info_details"
+                android:title="Acerca de la App" />
         </menu>
     </item>
 

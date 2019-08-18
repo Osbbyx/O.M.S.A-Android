@@ -9,132 +9,133 @@
     android:paddingBottom="15dp"
     tools:context=".RealMainActivity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginBottom="0dp"
-        android:gravity="top"
-        android:orientation="vertical">
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="59dp" />
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@mipmap/logo" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/bordes"
-            android:drawableLeft="@drawable/ic_important_devices_black_60dp"
-            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_45p"
-            android:drawingCacheQuality="high"
-            android:gravity="center"
-            android:onClick="servicio1"
-            android:paddingLeft="50dp"
-            android:paddingRight="10dp"
-            android:text="Reclamacion de objetos extraviados"
-            android:textColor="@android:color/background_light"
-            android:textSize="22sp"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/bordes"
-            android:drawableLeft="@drawable/ic_directions_bus_black_60dp"
-            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_45p"
-            android:drawingCacheQuality="high"
-            android:gravity="center"
-            android:onClick="servicio2"
-            android:paddingLeft="50dp"
-            android:paddingRight="10dp"
-            android:text="solicitud de servicios especial de autobuses"
-            android:textColor="@android:color/background_light"
-            android:textSize="22sp"
-            android:textStyle="bold" />
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:id="@+id/btnespecial"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:visibility="visible">
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="59dp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/logo" />
 
             <Button
-                android:id="@+id/btno1"
+                android:id="@+id/button3"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/bordes"
-                android:drawableLeft="@drawable/ic_border_color_black_60dp"
+                android:drawableLeft="@drawable/ic_important_devices_black_60dp"
                 android:drawableRight="@drawable/ic_keyboard_arrow_right_black_45p"
                 android:drawingCacheQuality="high"
                 android:gravity="center"
-                android:onClick="servicio3"
+                android:onClick="servicio1"
                 android:paddingLeft="50dp"
                 android:paddingRight="10dp"
-                android:text="Registrar objetos extraviados"
+                android:text="Reclamacion de objetos extraviados"
                 android:textColor="@android:color/background_light"
                 android:textSize="22sp"
-                android:textStyle="bold"
-                android:visibility="visible" />
+                android:textStyle="bold" />
 
             <Button
-                android:id="@+id/btno2"
+                android:id="@+id/button6"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/bordes"
-                android:drawableLeft="@drawable/ic_visibility_black_60dp"
+                android:drawableLeft="@drawable/ic_directions_bus_black_60dp"
                 android:drawableRight="@drawable/ic_keyboard_arrow_right_black_45p"
                 android:drawingCacheQuality="high"
                 android:gravity="center"
-                android:onClick="servicio3"
+                android:onClick="servicio2"
                 android:paddingLeft="50dp"
                 android:paddingRight="10dp"
-                android:text="Consulta de objetos extraviados"
+                android:text="solicitud de servicios especial de autobuses"
                 android:textColor="@android:color/background_light"
                 android:textSize="22sp"
-                android:textStyle="bold"
-                android:visibility="visible" />
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/btnespecial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/btno2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordes"
+                    android:drawableLeft="@drawable/ic_live_tv_black_60dp"
+                    android:drawableRight="@drawable/ic_keyboard_arrow_right_black_45p"
+                    android:drawingCacheQuality="high"
+                    android:gravity="center"
+                    android:onClick="servicio3"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="10dp"
+                    android:text="Noticias"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/btno1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordes"
+                    android:drawableLeft="@drawable/ic_nature_people_black_60dp"
+                    android:drawableRight="@drawable/ic_keyboard_arrow_right_black_45p"
+                    android:drawingCacheQuality="high"
+                    android:gravity="center"
+                    android:onClick="servicio4"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="10dp"
+                    android:text="Parada mas cercana"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:visibility="gone" />
+
         </LinearLayout>
+    </ScrollView>
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <EditText
-            android:id="@+id/et1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name"
-            android:visibility="gone" />
-
-    </LinearLayout>
 </RelativeLayout>
