@@ -37,14 +37,16 @@
                 android:paddingRight="90dp"
                 android:text="Noticias"
                 android:textColor="#fff"
-                android:textSize="16dp" />
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Esta funcionalidad, te permite ver las ultimas noticias de la OMSA" />
+                android:text="Esta funcionalidad, te permite ver las ultimas noticias de la OMSA"
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/button5"
@@ -56,14 +58,16 @@
                 android:paddingRight="90dp"
                 android:text="Reclamacion de objetos extraviados"
                 android:textColor="#fff"
-                android:textSize="16dp" />
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView28"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Este es un servicio, el se encarga de hacer una reclamacion en caso de perder un objeto en alguna de las guaguas de esta institucion, la cual nos llega a nosotros y podemos contactarlo o en caso de ir directamente a la oficina, confirmar dicho objeto exista." />
+                android:text="Este es un servicio, el se encarga de hacer una reclamacion en caso de perder un objeto en alguna de las guaguas de esta institucion, la cual nos llega a nosotros y podemos contactarlo o en caso de ir directamente a la oficina, confirmar dicho objeto exista."
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/button7"
@@ -75,14 +79,16 @@
                 android:paddingRight="90dp"
                 android:text="solicitud de servicios especiales de autobuses"
                 android:textColor="#fff"
-                android:textSize="16dp" />
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView29"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Este es un servicio, el cual si se necesita una guagua de esta institucion, para un lugar especifico que no se anuestras rutas, aqui puede hacer una solicitud para cuando y para donde va el servicio solicitado." />
+                android:text="Este es un servicio, el cual si se necesita una guagua de esta institucion, para un lugar especifico que no se anuestras rutas, aqui puede hacer una solicitud para cuando y para donde va el servicio solicitado."
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/button4"
@@ -94,14 +100,16 @@
                 android:paddingRight="90dp"
                 android:text="Parada mas cercana"
                 android:textColor="#fff"
-                android:textSize="16dp" />
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView13"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Esta funcionalidad que lo que hace es, depende de la localizacion en la que te encuentres, ensenarte la parada mas cercana a donde te encuentras." />
+                android:text="Esta funcionalidad que lo que hace es, depende de la localizacion en la que te encuentres, ensenarte la parada mas cercana a donde te encuentras."
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/button9"
@@ -109,7 +117,9 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/bordes"
                 android:text="Paso 1"
-                android:textColor="#fff" />
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/imageView5"
@@ -122,7 +132,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Click al botono superior derecho, el cual lo llevara en su lacalidad actual." />
+                android:text="Click al botono superior derecho, el cual lo llevara en su lacalidad actual."
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/button10"
@@ -130,7 +141,9 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/bordes"
                 android:text="Paso 2"
-                android:textColor="#fff" />
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/imageView7"
@@ -143,7 +156,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Click en el boton inferior al su derecha + o -, para aumentar o alejar del punto. " />
+                android:text="Click en el boton inferior al su derecha + o -, para aumentar o alejar del punto. "
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/button11"
@@ -151,7 +165,9 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/bordes"
                 android:text="Paso 3"
-                android:textColor="#fff" />
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/imageView8"
@@ -164,7 +180,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="El punto azul es usted y es como se guiara para saber su parada mas cercana." />
+                android:text="El punto azul es usted y es como se guiara para saber su parada mas cercana."
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/button12"
@@ -172,7 +189,9 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/bordes"
                 android:text="Paso 4"
-                android:textColor="#fff" />
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/imageView9"
@@ -185,7 +204,50 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Estos autobuses azules en el mapas son las paradas, el autobus mas cercano al punto azul, es su parada mas cercana." />
+                android:text="Estos autobuses azules en el mapas son las paradas, el autobus mas cercano al punto azul, es su parada mas cercana."
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordes"
+                android:drawableLeft="@drawable/ic_record_voice_over_black_60dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="90dp"
+                android:text="Quejas y Sugerencias"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Esta funcionalidad, te permite enviar cualquier sugerencia o queja que tengas, este sera resivido a la OMSA y se tomara en cuenta."
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordes"
+                android:drawableLeft="@drawable/ic_star_black_60dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="90dp"
+                android:text="Mensaje del Director"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Este tiene la funcionalidad de permitirnos leer el mensaje del Director de la (OMSA), dirigido a las personas que utilizan la app."
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/button8"
@@ -193,14 +255,17 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/bordes"
                 android:text="Cosas a por venir"
-                android:textColor="#fff" />
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView30"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Esta app fue creada con el proposito de tener todos los servicios de la (OMSA), sin tener que ir muy lejos y en tu propio celular, con el tiempo mientras se vayan requiriendo nuevos servicios , estos se iran integrando y la aplicacion ira actualizandose y tendra aun mas servicios y mas contenido." />
+                android:text="Esta app fue creada con el proposito de tener todos los servicios de la (OMSA), sin tener que ir muy lejos y en tu propio celular, con el tiempo mientras se vayan requiriendo nuevos servicios , estos se iran integrando y la aplicacion ira actualizandose y tendra aun mas servicios y mas contenido."
+                android:textSize="20sp" />
 
         </LinearLayout>
     </ScrollView>

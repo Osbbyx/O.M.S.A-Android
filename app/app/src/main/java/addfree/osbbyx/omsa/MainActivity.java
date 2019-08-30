@@ -193,6 +193,12 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_parada){
             Intent servicio4 = new Intent(this,ubicacion.class);
             startActivity(servicio4);
+        }else if (id == R.id.nav_queja){
+            Intent servicio4 = new Intent(this,Quejas.class);
+            startActivity(servicio4);
+        }else if (id == R.id.nav_director){
+            Intent servicio4 = new Intent(this,Director.class);
+            startActivity(servicio4);
         }else if (id == R.id.nav_share) {
             Intent nosotros = new Intent(this,SobreNosotros.class);
             startActivity(nosotros);
@@ -225,6 +231,16 @@ public class MainActivity extends AppCompatActivity
     }
     public void servicio4(View view){
         Intent ir = new Intent(this,ubicacion.class);
+        startActivity(ir);
+    }
+
+    public void servicio5(View view){
+        Intent ir = new Intent(this,Quejas.class);
+        startActivity(ir);
+    }
+
+    public void servicio6(View view){
+        Intent ir = new Intent(this,Director.class);
         startActivity(ir);
     }
 }

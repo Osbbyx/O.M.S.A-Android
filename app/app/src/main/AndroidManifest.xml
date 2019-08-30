@@ -2,15 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="addfree.osbbyx.omsa">
 
-    <!--
-         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
-         Google Maps Android API v2, but you must specify either coarse or fine
-         location permissions for the 'MyLocation' functionality.
-    -->
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,35 +10,43 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-
+        <activity android:name=".Director"></activity>
+        <activity android:name=".Quejas" />
         <activity
             android:name=".ubicacion"
-            android:label="@string/title_activity_ubicacion"
-            android:configChanges="orientation|keyboardHidden|screenSize"></activity>
-
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_ubicacion" />
         <activity
             android:name=".servicioparada"
-            android:label="@string/title_activity_servicioparada"
-            android:configChanges="orientation|keyboardHidden|screenSize"/>
-
-        <activity android:name=".Contacto"
-            android:configChanges="orientation|keyboardHidden|screenSize"/>
-        <activity android:name=".AcercaDeLaApp"
-            android:configChanges="orientation|keyboardHidden|screenSize"/>
-        <activity android:name=".SobreNosotros"
-            android:configChanges="orientation|keyboardHidden|screenSize"/>
-        <activity android:name=".aNoticias"
-            android:configChanges="orientation|keyboardHidden|screenSize"/>
-        <activity android:name=".Register"
-            android:configChanges="orientation|keyboardHidden|screenSize"/>
-        <activity android:name=".Login"
-            android:configChanges="orientation|keyboardHidden|screenSize"/>
-        <activity android:name=".ServicioObjetoExtraviados"
-            android:configChanges="orientation|keyboardHidden|screenSize"/>
-        <activity android:name=".ServicioServicioEspecialDeAutobuses"
-            android:configChanges="orientation|keyboardHidden|screenSize"/>
-        <activity android:name=".servicioObjetosExtraviados"
-            android:configChanges="orientation|keyboardHidden|screenSize"/>
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_servicioparada" />
+        <activity
+            android:name=".Contacto"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".AcercaDeLaApp"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".SobreNosotros"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".aNoticias"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".Register"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".Login"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".ServicioObjetoExtraviados"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".ServicioServicioEspecialDeAutobuses"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".servicioObjetosExtraviados"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -58,14 +57,17 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
     </application>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
 
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
 </manifest>

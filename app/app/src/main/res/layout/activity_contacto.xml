@@ -20,14 +20,15 @@
             <FrameLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
                 android:foreground="@mipmap/logo">
 
             </FrameLayout>
 
             <ImageView
                 android:id="@+id/imageView6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="308dp"
                 android:onClick="map"
                 app:srcCompat="@mipmap/mapa" />
 

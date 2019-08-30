@@ -2,6 +2,7 @@ package addfree.osbbyx.omsa;
 
 import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
+import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -16,6 +17,7 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -46,8 +48,9 @@ public class servicioObjetosExtraviados extends AppCompatActivity {
     FirebaseUser origin = auth.getCurrentUser();
     private DatabaseReference Clases;
     private int dia,mes,ano;
-    EditText t1,t2,t3,t4,t5,t6,t7,t8,t9;
+    EditText t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11;
     Date currentTime = Calendar.getInstance().getTime();
+    private int hora,minutos,hora2,minutos2;
 
     //nuevo
     Session session = null;
@@ -77,6 +80,8 @@ public class servicioObjetosExtraviados extends AppCompatActivity {
         t7 = (EditText)findViewById(R.id.et7);
         t8 = (EditText)findViewById(R.id.et8);
         t9 = (EditText)findViewById(R.id.momento);
+        t10 = (EditText) findViewById(R.id.et10);
+        t11 = (EditText) findViewById(R.id.et11);
 
 
 
@@ -183,7 +188,8 @@ public class servicioObjetosExtraviados extends AppCompatActivity {
             sub1.setText("Solicitud de servicio especial de autobuses. (OMSA APP)");
             subject1 = sub1.getText().toString();
             msg1.setText("Se a hecho una solicitud con los siguientes datos:"+"<br>"+"<br>"+"Nombre de la institucion: "+t1.getText()+"<br>"+"Telefono: "+t2.getText()+"<br>"+"Celular: "
-                    +t3.getText()+"<br>"+"Nombre del solicitante: "+t4.getText()+"<br>"+"Email: "+t5.getText()+"<br>"+"Fecha del servicio: "+t6.getText()+"<br>"+"Destino: "+t7.getText()+
+                    +t3.getText()+"<br>"+"Nombre del solicitante: "+t4.getText()+"<br>"+"Email: "+t5.getText()+"<br>"+"Fecha del servicio: "+t6.getText()+"<br>"+"Hora desde: "+t10.getText()
+                    +"<br>"+"Hora hasta: "+t11.getText()+"<br>"+"Destino: "+t7.getText()+
                     "<br>"+"Descripcion de solicitud: "+t8.getText()+"<br>"+"<br>"+"Esta solicitud fue realizada el ("+t9.getText()+") por medio de la App mobile de la OMSA");
             textMessage1 = msg1.getText().toString();
 
@@ -273,6 +279,36 @@ public class servicioObjetosExtraviados extends AppCompatActivity {
         }
                 ,ano,mes,dia);
         datePickerDialog.show();
+    }
+
+    public void hora(View view){
+        final Calendar c= Calendar.getInstance();
+        hora=c.get(Calendar.HOUR_OF_DAY);
+        minutos=c.get(Calendar.MINUTE);
+
+        TimePickerDialog timePickerDialog = new TimePickerDialog(this, new TimePickerDialog.OnTimeSetListener() {
+            @Override
+            public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+                t10.setText(hourOfDay+":"+minute);
+            }
+        },hora
+                ,minutos,false      );
+        timePickerDialog.show();
+    }
+
+    public void hora2(View view){
+        final Calendar c= Calendar.getInstance();
+        hora2=c.get(Calendar.HOUR_OF_DAY);
+        minutos2=c.get(Calendar.MINUTE);
+
+        TimePickerDialog timePickerDialog = new TimePickerDialog(this, new TimePickerDialog.OnTimeSetListener() {
+            @Override
+            public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+                t11.setText(hourOfDay+":"+minute);
+            }
+        },hora2
+                ,minutos2,false      );
+        timePickerDialog.show();
     }
 
 

@@ -22,6 +22,16 @@
             android:icon="@drawable/ic_nature_people_black_60dp"
             android:title="Parada mas cercana"
             android:visible="true" />
+        <item
+            android:id="@+id/nav_queja"
+            android:icon="@drawable/ic_record_voice_over_black_60dp"
+            android:title="Parada mas cercana"
+            android:visible="true" />
+        <item
+            android:id="@+id/nav_director"
+            android:icon="@drawable/ic_star_black_60dp"
+            android:title="Parada mas cercana"
+            android:visible="true" />
     </group>
 
     <item

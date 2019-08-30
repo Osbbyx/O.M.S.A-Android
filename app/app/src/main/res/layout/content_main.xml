@@ -15,9 +15,18 @@
         android:gravity="top"
         android:orientation="vertical">
 
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:visibility="gone" />
+
         <Space
             android:layout_width="match_parent"
-            android:layout_height="59dp" />
+            android:layout_height="64dp" />
 
         <ImageView
             android:id="@+id/imageView4"
@@ -29,7 +38,6 @@
             android:id="@+id/btnespecial"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginTop="15dp"
             android:layout_weight="1"
             android:orientation="horizontal"
             android:visibility="visible">
@@ -38,7 +46,8 @@
                 android:id="@+id/btno2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="14dp"
                 android:layout_weight="1"
                 android:background="@drawable/bordes"
                 android:drawableTop="@drawable/ic_live_tv_black_75dp"
@@ -46,7 +55,7 @@
                 android:drawingCacheQuality="high"
                 android:gravity="center"
                 android:onClick="servicio3"
-                android:paddingTop="25dp"
+                android:paddingTop="10dp"
                 android:paddingBottom="10dp"
                 android:text="Noticias"
                 android:textColor="@android:color/background_light"
@@ -58,6 +67,7 @@
                 android:id="@+id/btno1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/bordes"
                 android:drawableTop="@drawable/ic_nature_people_black_75dp"
@@ -65,7 +75,7 @@
                 android:drawingCacheQuality="high"
                 android:gravity="center"
                 android:onClick="servicio4"
-                android:paddingTop="25dp"
+                android:paddingTop="10dp"
                 android:paddingBottom="10dp"
                 android:text="Paradas"
                 android:textColor="@android:color/background_light"
@@ -74,52 +84,99 @@
                 android:visibility="visible" />
         </LinearLayout>
 
-        <Button
-            android:id="@+id/button3"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginTop="15dp"
             android:layout_weight="1"
-            android:background="@drawable/bordes"
-            android:drawableTop="@drawable/ic_important_devices_white_75dp"
-            android:drawableBottom="@android:drawable/arrow_down_float"
-            android:drawingCacheQuality="high"
-            android:gravity="center"
-            android:onClick="servicio1"
-            android:paddingTop="25dp"
-            android:paddingBottom="10dp"
-            android:text="Reclamacion de objetos extraviados"
-            android:textColor="@android:color/background_light"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button6"
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/bordes"
+                android:drawableTop="@drawable/ic_important_devices_white_75dp"
+                android:drawableBottom="@android:drawable/arrow_down_float"
+                android:drawingCacheQuality="high"
+                android:gravity="center"
+                android:onClick="servicio1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Reclamacion de objetos"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bordes"
+                android:drawableTop="@drawable/ic_record_voice_over_black_24dp"
+                android:drawableBottom="@android:drawable/arrow_down_float"
+                android:drawingCacheQuality="high"
+                android:gravity="center"
+                android:onClick="servicio5"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Quejas y Sugerencias"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginTop="15dp"
             android:layout_weight="1"
-            android:background="@drawable/bordes"
-            android:drawableTop="@drawable/ic_directions_bus_white_75dp"
-            android:drawableBottom="@android:drawable/arrow_down_float"
-            android:drawingCacheQuality="high"
-            android:gravity="center"
-            android:onClick="servicio2"
-            android:paddingTop="25dp"
-            android:paddingBottom="10dp"
-            android:text="solicitud de servicios especial de autobuses"
-            android:textColor="@android:color/background_light"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/et1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name"
-            android:visibility="gone" />
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/bordes"
+                android:drawableTop="@drawable/ic_directions_bus_white_75dp"
+                android:drawableBottom="@android:drawable/arrow_down_float"
+                android:drawingCacheQuality="high"
+                android:gravity="center"
+                android:onClick="servicio2"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="solicitud de servicios"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bordes"
+                android:drawableTop="@drawable/ic_star_black_24dp"
+                android:drawableBottom="@android:drawable/arrow_down_float"
+                android:drawingCacheQuality="high"
+                android:gravity="center"
+                android:onClick="servicio6"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Mensaje del director"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
     </LinearLayout>
 </RelativeLayout>

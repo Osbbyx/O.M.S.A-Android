@@ -146,6 +146,44 @@
                 android:gravity="center" />
 
             <EditText
+                android:id="@+id/et10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:ems="10"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:hint="Desde que hora"
+                android:inputType="number"
+                android:onClick="hora" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/et11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:ems="10"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:hint="Hasta que hora"
+                android:inputType="number"
+                android:onClick="hora2" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <EditText
                 android:id="@+id/et7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
