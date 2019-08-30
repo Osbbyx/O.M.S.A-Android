@@ -67,7 +67,7 @@
                 android:onClick="servicio4"
                 android:paddingTop="25dp"
                 android:paddingBottom="10dp"
-                android:text="Parada mas cercana"
+                android:text="Paradas"
                 android:textColor="@android:color/background_light"
                 android:textSize="20sp"
                 android:textStyle="bold"

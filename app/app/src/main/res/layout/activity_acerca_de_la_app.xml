@@ -47,25 +47,6 @@
                 android:text="Esta funcionalidad, te permite ver las ultimas noticias de la OMSA" />
 
             <Button
-                android:id="@+id/button4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bordes"
-                android:drawableLeft="@drawable/ic_nature_people_black_60dp"
-                android:paddingLeft="50dp"
-                android:paddingRight="90dp"
-                android:text="Parada mas cercana"
-                android:textColor="#fff"
-                android:textSize="16dp" />
-
-            <TextView
-                android:id="@+id/textView13"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Esta funcionalidad que lo que hace es, depende de la localizacion en la que te encuentres, ensenarte la parada mas cercana a donde te encuentras." />
-
-            <Button
                 android:id="@+id/button5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -102,6 +83,109 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Este es un servicio, el cual si se necesita una guagua de esta institucion, para un lugar especifico que no se anuestras rutas, aqui puede hacer una solicitud para cuando y para donde va el servicio solicitado." />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordes"
+                android:drawableLeft="@drawable/ic_nature_people_black_60dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="90dp"
+                android:text="Parada mas cercana"
+                android:textColor="#fff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Esta funcionalidad que lo que hace es, depende de la localizacion en la que te encuentres, ensenarte la parada mas cercana a donde te encuentras." />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordes"
+                android:text="Paso 1"
+                android:textColor="#fff" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/paso1" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Click al botono superior derecho, el cual lo llevara en su lacalidad actual." />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordes"
+                android:text="Paso 2"
+                android:textColor="#fff" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/paso2" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Click en el boton inferior al su derecha + o -, para aumentar o alejar del punto. " />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordes"
+                android:text="Paso 3"
+                android:textColor="#fff" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/paso3" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="El punto azul es usted y es como se guiara para saber su parada mas cercana." />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordes"
+                android:text="Paso 4"
+                android:textColor="#fff" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/paso4" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Estos autobuses azules en el mapas son las paradas, el autobus mas cercano al punto azul, es su parada mas cercana." />
 
             <Button
                 android:id="@+id/button8"

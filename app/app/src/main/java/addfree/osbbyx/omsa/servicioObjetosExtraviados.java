@@ -252,10 +252,6 @@ public class servicioObjetosExtraviados extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String result) {
-           /* pdialog.dismiss();
-            reciep.setText("");
-            msg.setText("");
-            sub.setText("");*/
             Toast.makeText(getApplicationContext(), "A concluido su peticion con exito!", Toast.LENGTH_LONG).show();
 
             Intent home = new Intent(servicioObjetosExtraviados.this, MainActivity.class);

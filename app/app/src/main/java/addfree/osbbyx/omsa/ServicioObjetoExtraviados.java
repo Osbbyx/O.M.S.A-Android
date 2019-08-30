@@ -71,7 +71,9 @@ public class ServicioObjetoExtraviados extends AppCompatActivity {
 
         sp1= (Spinner)findViewById(R.id.sp1);
 
-        String [] opciones = {"Corredor 27 de Febrero","Corredor JF. Kennedy","Corredor Naco","Ruta Universitaria"};
+        String [] opciones = {"Corredor 27 de Febrero","Corredor Kennedy","Corredor Alcarrizos", "Corredor Maximo Gomez", "Corredor Independencia",
+        "Corredor Los Rios", "Corredor Naco", "Corredor Charles de Gaulle", "Corredor La Barquita", "Corredor Juan Bosch", "Corredor Lincoln",
+        "Corredor Olimpico","Corredor Luperon","Corredor Bolivar","Corredor Central(Santiago)", "Corredor Canabacoa(Santiago)","Corredor Gurabo(Santiago)"};
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, opciones);
         sp1.setAdapter(adapter);
@@ -259,10 +261,6 @@ public class ServicioObjetoExtraviados extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String result) {
-           /* pdialog.dismiss();
-            reciep.setText("");
-            msg.setText("");
-            sub.setText("");*/
             Toast.makeText(getApplicationContext(), "A concluido su peticion con exito!", Toast.LENGTH_LONG).show();
 
             Intent home = new Intent(ServicioObjetoExtraviados.this, MainActivity.class);

@@ -89,7 +89,7 @@
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/ic_mail_black_24dp"
                 android:ems="10"
-                android:hint="Correo de Gmail"
+                android:hint="Correo electronico"
                 android:inputType="textEmailAddress"
                 android:textColorHint="#000"
                 android:textSize="14sp" />

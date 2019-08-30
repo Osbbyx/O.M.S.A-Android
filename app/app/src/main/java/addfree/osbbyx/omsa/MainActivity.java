@@ -1,10 +1,14 @@
 package addfree.osbbyx.omsa;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.View;
 import android.support.v4.view.GravityCompat;
@@ -43,6 +47,8 @@ public class MainActivity extends AppCompatActivity
     EditText t1 ;
     LinearLayout special;
 
+    private static final int MY_PERMISSIONS_REQUEST_ACCESS_COARSE_LOCATION = 1 ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,7 +79,10 @@ public class MainActivity extends AppCompatActivity
         t1 = (EditText)findViewById(R.id.et1) ;
         special = (LinearLayout)findViewById(R.id.btnespecial);
 
+        //-----------------------------------ACCESOS DE PERMISOS----------------------------------------------------------------
 
+        // esto muestra el dialogo de permisos
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION}, /* Este codigo es para identificar tu request */ 1);
 
         //-------------------------------------------------------------------------------------------------------------------------
         Clases.child("Usuarios").addValueEventListener(new ValueEventListener() {
@@ -133,6 +142,7 @@ public class MainActivity extends AppCompatActivity
 
 
 
+
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -181,7 +191,7 @@ public class MainActivity extends AppCompatActivity
             Intent servicio3 = new Intent(this,aNoticias.class);
             startActivity(servicio3);
         } else if (id == R.id.nav_parada){
-            Intent servicio4 = new Intent(this,parada.class);
+            Intent servicio4 = new Intent(this,ubicacion.class);
             startActivity(servicio4);
         }else if (id == R.id.nav_share) {
             Intent nosotros = new Intent(this,SobreNosotros.class);
@@ -214,7 +224,7 @@ public class MainActivity extends AppCompatActivity
         startActivity(ir);
     }
     public void servicio4(View view){
-        Intent ir = new Intent(this,parada.class);
+        Intent ir = new Intent(this,ubicacion.class);
         startActivity(ir);
     }
 }

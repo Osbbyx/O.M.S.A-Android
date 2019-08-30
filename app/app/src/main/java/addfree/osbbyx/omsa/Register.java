@@ -113,7 +113,7 @@ public class Register extends AppCompatActivity {
 
         //Registrando administracion
 
-        registrarClase();
+
 
         progressDialog.setMessage("Realizando registro en linea...");
         progressDialog.show();
@@ -128,6 +128,7 @@ public class Register extends AppCompatActivity {
 
                             Toast.makeText(Register.this,"Se ha registrado el usuario con el email: "+ gmail.getText(),Toast.LENGTH_LONG).show();
                             cont = "activo";
+                            registrarClase();
                             if(cont == "activo"){
                                 Intent regi = new Intent(Register.this, Login.class);
                                 startActivity(regi);
@@ -138,9 +139,10 @@ public class Register extends AppCompatActivity {
                         }else{
                                 if(task.getException() instanceof FirebaseAuthUserCollisionException){
                                     Toast.makeText(Register.this,"Este Email ya esta registrado ",Toast.LENGTH_LONG).show();
+                                }else {
+                                    Toast.makeText(Register.this, "No se pudo registrar el usuario, colocar un email valido", Toast.LENGTH_LONG).show();
                                 }
-                            Toast.makeText(Register.this,"No se pudo registrar el usuario, colocar un email valido",Toast.LENGTH_LONG).show();
-                        }
+                                }
                         progressDialog.dismiss();
                     }
                 });

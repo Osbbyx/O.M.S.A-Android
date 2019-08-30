@@ -161,9 +161,10 @@
 
             <Spinner
                 android:id="@+id/sp1"
-                android:layout_width="121dp"
+                android:layout_width="241dp"
                 android:layout_height="wrap_content"
-                android:gravity="center" />
+                android:gravity="center"
+                android:paddingLeft="30dp" />
 
             <Space
                 android:layout_width="match_parent"
