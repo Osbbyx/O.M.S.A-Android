@@ -1,18 +1,212 @@
 <resources>
     <string name="app_name">OMSA</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">OMSA Servicios</string>
-    <string name="nav_header_subtitle">Omsa@omsa.omsa</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
-
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_tools">Tools</string>
-    <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
-    <string name="title_activity_servicioparada">Map</string>
+    <string name="nav_header_subtitle">Tel: (809) 221-6672</string>
+    <string name="Creador">Creado por: Osbbyx- ©(OMSA) 2019</string>
     <string name="title_activity_ubicacion">Map</string>
+    <string name="title_activity_servicioparada">Map</string>
+    <string name="nav_header_desc">Esta app fue creada por Oliver Smit Bencosme Bencosme, siendo pasante en la institucion (OMSA), donde duro
+    1 mes y 2 semanas y en ese tipo creo 4 aplicaciones para la institucion, la cual 1 de ellas es la actual App.</string>
+    <string name="navigation_drawer_open">Abriendo navegador(Osbbyx)</string>
+    <string name="navigation_drawer_close">Cerrando navegador (Osbbyx)</string>
+    <string name="entendido">Entendido</string>
+
+
+    <!-- Menu de Navegacion  -->
+    <string name="menu_1">Objetos perdidos</string>
+    <string name="menu_2">Solicitud de autobús </string>
+    <string name="menu_3">Noticias</string>
+    <string name="menu_4">Parada más cercana</string>
+    <string name="menu_5">Quejas y Sugerencias</string>
+    <string name="menu_6">Mensaje del director</string>
+    <string name="menu_divisor">Comunicación</string>
+    <string name="menu_7">Sobre nosotros</string>
+    <string name="menu_8">Contacto</string>
+    <string name="menu_9">Acerca de la App</string>
+    <string name="menu_10">Información del transporte</string>
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    Login   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+    <string name="Lo_Recordar">Recordar</string>
+    <string name="Lo_Iniciar">iniciar sesión</string>
+    <string name="Lo_AunNo">Aun no tengo usuario,</string>
+    <string name="Lo_Solicitar"> Solicitar un usuario</string>
+    <string name="Lo_Copyright">®Copyright-OMSA 2019 (Osbbyx)</string>
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    Register   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+    <string name="RG_Nombre"> Nombre completo</string>
+    <string name="RG_Telefono">Teléfono </string>
+    <string name="RG_Correo">Correo electrónico </string>
+    <string name="RG_Edad">Edad</string>
+    <string name="RG_Pass">Contraseña</string>
+    <string name="RG_CPass">Confirmar Contraseña</string>
+    <string name="RG_Registrar">Registrar</string>
+
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    Acerca de   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+    <string name="P1_noticias">Noticias</string>
+    <string name="P1_contenidoNoticias">Esta funcionalidad, te permite ver las ultimas noticias de la OMSA.</string>
+    <string name="P1_Objetos_perdidos">Objetos perdidos</string>
+    <string name="P1_contenidoObjetosPerdidos">Este servicio, se encarga de hacer una reclamación en caso de extraviar
+        un objeto en algún autobús de esta institución, la cual nos llega a nosotros y podemos contactarlo.</string>
+    <string name="P1_Solicitud_De_Autobus">Solicitud de autobús</string>
+    <string name="P1_contenido_Solicitud_autobus">En caso de requerir un autobús de esta institución, para un lugar
+        específico, aquí puede hacer una solicitud para cuándo y para dónde va el servicio solicitado.</string>
+    <string name="P1_parada_mas_Cercana">Parada más cercana</string>
+    <string name="P1_contenido_de_parada">Esta función te permite localizar de una manera rápida la parada más cercana a tu ubicación.</string>
+    <string name="P1_paso1">Paso 1</string>
+    <string name="P1_contenidoPaso1">Presionar el botón superior derecho, el cual lo llevara a su localidad actual.</string>
+    <string name="P1_paso2">Paso 2</string>
+    <string name="P1_contenidoPaso2">Presionar en el botón inferior a su derecha + para aumentar o - para alejar del punto.</string>
+    <string name="P1_Paso3">Paso 3</string>
+    <string name="P1_contenidoPaso3">El punto azul es usted y es como se guiará para saber su parada más cercana.</string>
+    <string name="P1_Paso4">Paso 4</string>
+    <string name="P1_contenidoPaso4">(Estos autobuses azules en el mapa son las paradas). El autobús más cercano al punto azul, es su parada
+        más cercana.</string>
+    <string name="P1_QuejasSugerencia">Quejas y Sugerencias</string>
+    <string name="P1_contenidoQuejasSugerencia">Esta funcionalidad, te permite enviar cualquier sugerencia o queja que tengas, el primer campo
+    es para su quejas o sugerencias, el segundo campo para subir fotos de la queja y el tercer campo para la ficha del autobús
+    donde se tuvo el inconveniente.</string>
+    <string name="P1_Mensaje_Director">Mensaje del Director</string>
+    <string name="P1_contenido_MensajeDirector">Este tiene la funcionalidad de permitirnos leer el mensaje del Director de la (OMSA),
+        dirigido a las personas que utilizan la app.</string>
+    <string name="P1_Cosas_porVenir">Cosas a por venir</string>
+    <string name="P1_contenidoCosasPorVenir">Esta app fue creada con el propósito de tener todos los servicios de la (OMSA), sin tener
+        que ir muy lejos y en tu propio celular, con el tiempo mientras se vayan requiriendo nuevos servicios , estos se irán integrando
+        y la aplicación ira actualizándose y tendrá aún más servicios y más contenido.</string>
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    Contacto   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+    <string name="P2_Titular">Oficina Principal</string>
+    <string name="P2_info1">Prolongacion 27 de Febrero, Santo Domingo, RD</string>
+    <string name="P2_info2">Pagina: omsa.gob.do</string>
+    <string name="P2_info3">Tel:(809) 221-6672</string>
+    <string name="P2_info4">Fax:(809)560-5564</string>
+    <string name="P2_info5">Contacto: correspondencia@omsa.gob.do</string>
+    <string name="P2_info6">De Lunes a Viernes 8:00 AM a 7:00 PM</string>
+    <string name="P2_info7">Correo institucional: http://mail.hosting.gob.do</string>
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    Director   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+    <string name="P3_info1">Lic. Héctor Mojica director de la Oficina Metropolitana de Servicios de Autobuses (OMSA)</string>
+    <string name="P3_info2">Mensaje de bienvenida</string>
+    <string name="P3_mensaje">Héctor Mojica, nació el 2 de diciembre de 1951, en Santo Domingo, D. N. Cursó estudios de Pedagogía,
+        Mención Letras, en la Universidad Autónoma de Santo Domingo, UASD. Ejerció como docente desde 1975 a 1985, en los colegios Academia
+        de la Educación, Divino Maestro y Pedro Francisco Bonó. Está casado con la señora Elizabeth Ozuna, y es padre de tres hijos.</string>
+    <string name="P3_mensajep2">El primer cargo ejercido por Mojica en el sector público fue como Gobernador del Palacio Consistorial,
+            del Ayuntamiento del Distrito Nacional (2002-2004). Además, en la última década ha ocupado las posiciones siguientes:</string>
+    <string name="P3_mensajep3">Subdirector Administrativo de Bienes Nacionales (2004-2007).</string>
+    <string name="P3_mensajep4">Vicepresidente del Consejo del Fondo Patrimonial de las Empresas Reformadas –FONPER- (2007-2009, 2011-2012).</string>
+    <string name="P3_mensajep5">Ministro Consejero en la Embajada Dominicana en la República Bolivariana de Venezuela (2009-2010).</string>
+    <string name="P3_mensajep6">Ministro Consejero en la Embajada Dominicana en Santiago de Chile (2010-2011).</string>
+    <string name="P3_mensajep7">Director General de la Oficina Técnica de Transporte Terrestre -OTTT- (2012-2017).</string>
+    <string name="P3_mensajep8">Presidente del Consejo de Coordinación de la Zona Especial de Desarrollo Fronterizo -CCDF- (2017).</string>
+    <string name="P3_mensajep9">Actual Director General de la Oficina Metropolitana de Servicios de Autobuses -OMSA-</string>
+
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    Quejas o Sugerencias   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+    <string name="P4_info1">Quejas o Sugerencias</string>
+    <string name="P4_info2">Queja o sugerencias:</string>
+    <string name="P4_info4">Ficha del autobús</string>
+    <string name="P4_Enviar">Enviar</string>
+
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    Objetos Perdidos   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+
+    <string name="P5_titular">Objetos perdidos</string>
+    <string name="P5_nombre">Nombre de Usuario</string>
+    <string name="P5_telefono">Teléfono </string>
+    <string name="P5_correo">Correo Electronico</string>
+    <string name="P5_ficha">Ficha del Autobús(Opcional) </string>
+    <string name="P5_fecha">Fecha de la pérdida</string>
+    <string name="P5_hora">Hora aproximada</string>
+    <string name="P5_corredor">Corredor(Ruta)</string>
+    <string name="P5_descripcion">Descripción del objeto</string>
+    <string name="P5_finalizar">Finalizar</string>
+
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    Solicitud de autobús    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+    <string name="P6_titular">Solicitud de autobús </string>
+    <string name="P6_nombreInstitucion">Nombre de la institución </string>
+    <string name="P6_telefono">Teléfono </string>
+    <string name="P6_celular">Celular (Opcional)</string>
+    <string name="P6_nombre">Nombre del solicitante</string>
+    <string name="P6_Correo">Correo Electrónico </string>
+    <string name="P6_Fecha">Fecha del Servicio</string>
+    <string name="P6_Desde">Desde qué hora</string>
+    <string name="P6_Hasta">Hasta que hora</string>
+    <string name="P6_Destino">Destino</string>
+    <string name="P6_Descripcion">Descripción de Solicitud</string>
+    <string name="P6_Finalizar">Finalizar</string>
+
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    Sobre nosotros    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+    <string name="P7_titular">Quiénes Somos?</string>
+    <string name="P7_t1">La Oficina Metropolitana de Servicios de Autobuses (OMSA)</string>
+    <string name="P7_co1">Fue creada con la finalidad de brindar el servicio de preparación, mantenimiento reparación y
+        despacho de la flota de autobuses de transporte público siendo reconocida como la institución líder en materia de
+        transporte público metropolitano de la República Dominicana, dando a los usuarios un servicio de transporte de calidad,
+        eficiente y seguro a un costo asequible.</string>
+    <string name="P7_t2">Visión </string>
+    <string name="P7_co2">Ser reconocida como la institución líder en materia de transporte público metropolitano de la República Dominicana.</string>
+    <string name="P7_t3">Misión </string>
+    <string name="P7_co3">Brindar a nuestros usuarios un servicio de transporte de calidad, eficiente y seguro a un costo
+        asequible, comprometiéndonos con la implementación de políticas de protección al medio ambiente, apoyado en el trabajo en equipo y
+        la salud ocupacional de nuestros empleados.</string>
+    <string name="P7_t4">Valores</string>
+    <string name="P7_co4">1-Responsabilidad</string>
+    <string name="P7_co5">2-Honestidad</string>
+    <string name="P7_co6">3-Lealtad</string>
+    <string name="P7_co7">4-Respeto</string>
+    <string name="P7_co8">5-Honradez</string>
+    <string name="P7_co9">6-Solidaridad</string>
+
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    Pantalla Principal   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+    <string name="Noticias">Noticias</string>
+    <string name="Paradas">Paradas</string>
+    <string name="objetos_perdidos">Objetos perdidos</string>
+    <string name="Quejas_sugerencias">Quejas y Sugerencias</string>
+    <string name="Solicitud_autobus">Solicitud de autobús</string>
+    <string name="mensaje_del_director">Mensaje del director</string>
+
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    Autobuses   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+    <string name="P8_titularPrincipal">Información general de los autobuses</string>
+    <string name="P8_contenidoPrincipal">Cada autobús es operado por un conductor y por un cajero abordo, debidamente uniformados.</string>
+    <string name="P8_info">Información:</string>
+    <string name="P8_titulo1">Precio</string>
+    <string name="P8_co1">15$ DOP</string>
+    <string name="P8_titulo2">Horario</string>
+    <string name="P8_co2">De Lunes a Domingo 06:00 AM a 10:00 PM</string>
+    <string name="P8_titulo3">Corredores</string>
+    <string name="P8_co3">Corredor 27 de Febrero</string>
+    <string name="P8_co4">Corredor Kennedy</string>
+    <string name="P8_co5">Corredor Alcarrizos</string>
+    <string name="P8_co6">Corredor Maximo Gomez</string>
+    <string name="P8_co7">Corredor Independencia</string>
+    <string name="P8_co8">Corredor Los Rios</string>
+    <string name="P8_co9">Corredor Naco</string>
+    <string name="P8_co10">Corredor Charles de Gaulle</string>
+    <string name="P8_co11">Corredor La Barquita</string>
+    <string name="P8_co12">Corredor Juan Bosch</string>
+    <string name="P8_co13">Corredor Lincoln</string>
+    <string name="P8_co14">Corredor Olimpico</string>
+    <string name="P8_co15">Corredor Luperon</string>
+    <string name="P8_co16">Corredor Bolivar</string>
+    <string name="P8_co17">Corredor Central(Santiago)</string>
+    <string name="P8_co18">Corredor Canabacoa(Santiago)</string>
+    <string name="P8_co19">Corredor Gurabo(Santiago)</string>
+
+    <string name="FloatButton">Servicios de la OMSA</string>
+
+    <string name="VerRuta">Ver Rutas en el mapa</string>
+
+
 </resources>

@@ -31,7 +31,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Servicio 1 Reclamacion de Objetos extraviados"
+                android:text="@string/P5_titular"
+                android:textColor="#000"
                 android:textSize="18sp" />
 
             <Space
@@ -50,7 +51,7 @@
                 android:focusable="false"
                 android:focusableInTouchMode="false"
                 android:gravity="center"
-                android:hint="Nombre de Usuario"
+                android:hint="@string/P5_nombre"
                 android:inputType="textPersonName" />
 
             <TextView
@@ -70,7 +71,7 @@
                 android:focusable="false"
                 android:focusableInTouchMode="false"
                 android:gravity="center"
-                android:hint="Telefono"
+                android:hint="@string/P5_telefono"
                 android:inputType="phone" />
 
             <TextView
@@ -90,7 +91,7 @@
                 android:focusable="false"
                 android:focusableInTouchMode="false"
                 android:gravity="center"
-                android:hint="Correo Electronico"
+                android:hint="@string/P5_correo"
                 android:inputType="textEmailAddress" />
 
             <TextView
@@ -105,7 +106,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:gravity="center"
-                android:hint="Ficha del Autobus(Opcional)"
+                android:hint="@string/P5_ficha"
                 android:inputType="textPersonName" />
 
             <Space
@@ -119,7 +120,7 @@
                 android:ems="10"
                 android:focusable="false"
                 android:gravity="center"
-                android:hint="Fecha de la perdida"
+                android:hint="@string/P5_fecha"
                 android:inputType="date"
                 android:longClickable="false"
                 android:onClick="fecha" />
@@ -137,7 +138,7 @@
                 android:ems="10"
                 android:focusable="false"
                 android:gravity="center"
-                android:hint="Hora aproximada"
+                android:hint="@string/P5_hora"
                 android:inputType="number"
                 android:onClick="hora" />
 
@@ -152,7 +153,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Corredor(Ruta)"
+                android:text="@string/P5_corredor"
                 android:textSize="18sp" />
 
             <Space
@@ -176,7 +177,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:gravity="center"
-                android:hint="Descripcion del objeto"
+                android:hint="@string/P5_descripcion"
                 android:inputType="textMultiLine" />
 
             <Space
@@ -189,7 +190,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/bordes"
                 android:onClick="onClick"
-                android:text="Finalizar"
+                android:text="@string/P5_finalizar"
                 android:textColor="#fff" />
 
             <Space

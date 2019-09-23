@@ -4,6 +4,6 @@
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
-        android:title="Creado por: Osbbyx- ©(OMSA) 2019"
+        android:title="@string/Creador"
         app:showAsAction="never" />
 </menu>

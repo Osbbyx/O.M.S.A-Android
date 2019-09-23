@@ -1,9 +1,11 @@
 package addfree.osbbyx.omsa;
 
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
 import android.app.TimePickerDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.annotation.NonNull;
@@ -63,6 +65,21 @@ public class servicioObjetosExtraviados extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_servicio_objetos_extraviados);
+
+        //---------------el alertdiag ----------------------
+
+        AlertDialog.Builder alerta = new AlertDialog.Builder(this);
+        alerta.setMessage(R.string.P1_contenido_Solicitud_autobus).setIcon(R.mipmap.ic_omsa).setPositiveButton(R.string.entendido, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+        AlertDialog titulo = alerta.create();
+        titulo.setTitle(R.string.menu_2);
+        titulo.show();
+
+        //---------------------------------------------------
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);

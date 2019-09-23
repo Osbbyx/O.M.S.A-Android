@@ -132,9 +132,11 @@ public class Login extends AppCompatActivity {
 
         if(checkbox.isChecked()){
             Guardar(view);
-        }else{
+
+        }else if(!checkbox.isChecked()){
             TextEmail.setText("");
             TextPassword.setText("");
+            Guardar(view);
 
         }
         loguearUsuario();

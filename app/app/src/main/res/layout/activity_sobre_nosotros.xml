@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:paddingTop="15dp"
-                android:text="Quienes Somos?"
+                android:text="@string/P7_titular"
                 android:textColor="#4CAF50"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:paddingTop="10dp"
-                android:text="La Oficina Metropolitana de Servicios de Autobuses (OMSA)"
+                android:text="@string/P7_t1"
                 android:textColor="#000"
                 android:textSize="16sp" />
 
@@ -50,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="creada con la finalidad de brindar el servicio de preparacion, mantenimientom reparacion y despacho de la flota de autobuses de transporte publico siendo reconocida como la institucion lider en materia de transporte publico metropolitano de la Republica, dando a los usuarios un servicio de transporte de calidad, eficiente y seguro a un costo asequible."
+                android:text="@string/P7_co1"
                 android:textSize="16dp" />
 
             <TextView
@@ -59,7 +59,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:paddingTop="10dp"
-                android:text="Vision"
+                android:text="@string/P7_t2"
                 android:textColor="#000"
                 android:textSize="16dp" />
 
@@ -68,7 +68,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Ser reconocida como la institucion lider en materia de transporte publico metropolitano de la Republica Dominicana."
+                android:text="@string/P7_co2"
                 android:textSize="16dp" />
 
             <TextView
@@ -77,7 +77,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:paddingTop="10dp"
-                android:text="Mision"
+                android:text="@string/P7_t3"
                 android:textColor="#000"
                 android:textSize="16dp" />
 
@@ -86,7 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Brindar a nuestros usuarios un servicio de transporte de calidad, eficiente y seguro a un costo asequible, comprometiendonos con la implementacion de politicas de proteccion al medio ambiente, apoyado en el trabajo en equipo y la salud ocupacional de nuestros empleados."
+                android:text="@string/P7_co3"
                 android:textSize="16dp" />
 
             <TextView
@@ -95,7 +95,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:paddingTop="10dp"
-                android:text="Valores"
+                android:text="@string/P7_t4"
                 android:textColor="#000"
                 android:textSize="16dp" />
 
@@ -104,7 +104,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="1-Responsabilidad"
+                android:text="@string/P7_co4"
                 android:textSize="16dp" />
 
             <TextView
@@ -112,7 +112,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="2-Honestidad"
+                android:text="@string/P7_co5"
                 android:textSize="16dp" />
 
             <TextView
@@ -120,7 +120,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="3-Lealtad"
+                android:text="@string/P7_co6"
                 android:textSize="16dp" />
 
             <TextView
@@ -128,7 +128,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="4-Respeto"
+                android:text="@string/P7_co7"
                 android:textSize="16dp" />
 
             <TextView
@@ -136,7 +136,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="5-Honradez"
+                android:text="@string/P7_co8"
                 android:textSize="16dp" />
 
             <TextView
@@ -144,7 +144,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="6-Solidaridad"
+                android:text="@string/P7_co9"
                 android:textSize="16dp" />
 
         </LinearLayout>

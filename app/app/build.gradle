@@ -7,8 +7,8 @@ android {
         applicationId "addfree.osbbyx.omsa"
         minSdkVersion 16
         targetSdkVersion 28
-        versionCode 7
-        versionName "1.6"
+        versionCode 12
+        versionName "1.11"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -37,4 +37,5 @@ dependencies {
     implementation files('libs\\mail.jar')
     implementation files('libs\\activation.jar')
     implementation files('libs\\additionnal.jar')
+
 }

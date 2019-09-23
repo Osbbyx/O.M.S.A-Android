@@ -57,9 +57,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="49dp"
                 android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                android:drawablePadding="8dp"
                 android:ems="10"
                 android:gravity="center|left"
-                android:hint=" Nombre completo"
+                android:hint="@string/RG_Nombre"
                 android:inputType="textPersonName"
                 android:textColorHint="#000"
                 android:textSize="14sp" />
@@ -73,8 +74,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/ic_phone_iphone_black_24dp"
+                android:drawablePadding="8dp"
                 android:ems="10"
-                android:hint=" Telefono"
+                android:hint="@string/RG_Telefono"
                 android:inputType="phone"
                 android:textColorHint="#000"
                 android:textSize="14sp" />
@@ -88,8 +90,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/ic_mail_black_24dp"
+                android:drawablePadding="8dp"
                 android:ems="10"
-                android:hint="Correo electronico"
+                android:hint="@string/RG_Correo"
                 android:inputType="textEmailAddress"
                 android:textColorHint="#000"
                 android:textSize="14sp" />
@@ -103,8 +106,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/ic_child_care_black_24dp"
+                android:drawablePadding="8dp"
                 android:ems="10"
-                android:hint=" Edad"
+                android:hint="@string/RG_Edad"
                 android:inputType="number"
                 android:textColorHint="#000"
                 android:textSize="14sp" />
@@ -118,8 +122,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="49dp"
                 android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:drawablePadding="8dp"
                 android:ems="10"
-                android:hint=" Contraseña"
+                android:hint="@string/RG_Pass"
                 android:inputType="textPassword"
                 android:textColorHint="#000"
                 android:textSize="14sp" />
@@ -134,8 +139,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="49dp"
                 android:drawableLeft="@drawable/ic_done_all_black_24dp"
+                android:drawablePadding="8dp"
                 android:ems="10"
-                android:hint=" Confirmar Contraseña"
+                android:hint="@string/RG_CPass"
                 android:inputType="textPassword"
                 android:textColorHint="#000"
                 android:textSize="14sp" />
@@ -150,7 +156,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/bordes"
                 android:onClick="registrar"
-                android:text="Registrar"
+                android:text="@string/RG_Registrar"
                 android:textColor="#fff"
                 android:textColorLink="#00FAF4F4"
                 android:textSize="14sp" />
@@ -168,16 +174,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="bottom|center"
-                android:text="®Copyright-OMSA 2019"
+                android:text="®Copyright-OMSA 2019 (Osbbyx)"
                 android:textColor="#000"
                 android:textStyle="bold|italic" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="34dp" />
 
             <EditText
                 android:id="@+id/admin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:visibility="gone" />
 
         </LinearLayout>
     </ScrollView>

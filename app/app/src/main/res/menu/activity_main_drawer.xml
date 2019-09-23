@@ -7,49 +7,54 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_speaker_notes_black_24dp"
-            android:title="Reclamacion de objetos" />
+            android:title="@string/menu_1" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_directions_bus_black_2444dp"
-            android:title="servicios de autobuses" />
+            android:title="@string/menu_2" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_live_tv_black_45dp"
-            android:title="Noticias"
+            android:title="@string/menu_3"
             android:visible="true" />
         <item
             android:id="@+id/nav_parada"
             android:icon="@drawable/ic_nature_people_black_60dp"
-            android:title="Parada mas cercana"
+            android:title="@string/menu_4"
             android:visible="true" />
         <item
             android:id="@+id/nav_queja"
             android:icon="@drawable/ic_record_voice_over_black_60dp"
-            android:title="Parada mas cercana"
+            android:title="@string/menu_5"
             android:visible="true" />
         <item
             android:id="@+id/nav_director"
             android:icon="@drawable/ic_star_black_60dp"
-            android:title="Parada mas cercana"
+            android:title="@string/menu_6"
             android:visible="true" />
     </group>
 
     <item
-        android:title="Comunicacion"
+        android:title="@string/menu_divisor"
         android:visible="true">
         <menu>
             <item
                 android:id="@+id/nav_share"
                 android:icon="@android:drawable/ic_menu_myplaces"
-                android:title="Sobre nosotros" />
+                android:title="@string/menu_7" />
             <item
                 android:id="@+id/nav_contacto"
                 android:icon="@android:drawable/ic_menu_call"
-                android:title="Contacto" />
+                android:title="@string/menu_8" />
             <item
                 android:id="@+id/nav_send"
                 android:icon="@android:drawable/ic_menu_info_details"
-                android:title="Acerca de la App" />
+                android:title="@string/menu_9" />
+
+            <item
+                android:id="@+id/nav_info"
+                android:icon="@drawable/ic_transfer_within_a_station_black_24dp"
+                android:title="@string/menu_10" />
         </menu>
     </item>
 

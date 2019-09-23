@@ -49,7 +49,7 @@
                 android:onClick="servicio1"
                 android:paddingLeft="50dp"
                 android:paddingRight="10dp"
-                android:text="Reclamacion de objetos extraviados"
+                android:text="@string/objetos_perdidos"
                 android:textColor="@android:color/background_light"
                 android:textSize="22sp"
                 android:textStyle="bold" />
@@ -68,7 +68,7 @@
                 android:onClick="servicio2"
                 android:paddingLeft="50dp"
                 android:paddingRight="10dp"
-                android:text="solicitud de servicios especial de autobuses"
+                android:text="@string/Solicitud_autobus"
                 android:textColor="@android:color/background_light"
                 android:textSize="22sp"
                 android:textStyle="bold" />
@@ -87,7 +87,7 @@
                 android:onClick="servicio3"
                 android:paddingLeft="50dp"
                 android:paddingRight="10dp"
-                android:text="Noticias"
+                android:text="@string/Noticias"
                 android:textColor="@android:color/background_light"
                 android:textSize="22sp"
                 android:textStyle="bold"
@@ -107,7 +107,7 @@
                 android:onClick="servicio4"
                 android:paddingLeft="50dp"
                 android:paddingRight="10dp"
-                android:text="Parada mas cercana"
+                android:text="@string/Paradas"
                 android:textColor="@android:color/background_light"
                 android:textSize="22sp"
                 android:textStyle="bold"
@@ -127,7 +127,7 @@
                 android:onClick="servicio5"
                 android:paddingLeft="50dp"
                 android:paddingRight="10dp"
-                android:text="Quejas y Sugerencias"
+                android:text="@string/Quejas_sugerencias"
                 android:textColor="@android:color/background_light"
                 android:textSize="22sp"
                 android:textStyle="bold" />
@@ -146,7 +146,7 @@
                 android:onClick="servicio6"
                 android:paddingLeft="50dp"
                 android:paddingRight="10dp"
-                android:text="Mensaje del Director"
+                android:text="@string/mensaje_del_director"
                 android:textColor="@android:color/background_light"
                 android:textSize="22sp"
                 android:textStyle="bold" />

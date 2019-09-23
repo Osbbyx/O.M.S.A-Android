@@ -1,12 +1,23 @@
 package addfree.osbbyx.omsa;
 
+import android.Manifest;
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
 import android.app.TimePickerDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Environment;
+import android.provider.MediaStore;
 import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -16,6 +27,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TimePicker;
 import android.widget.Toast;
@@ -28,6 +40,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Properties;
@@ -43,11 +58,15 @@ import javax.mail.internet.MimeMessage;
 
 public class Quejas extends AppCompatActivity {
 
-    Button btn;
+    Button btnc;
+    ImageView img;
     FirebaseAuth auth = FirebaseAuth.getInstance();
     FirebaseUser origin = auth.getCurrentUser();
     private DatabaseReference Clases;
-    EditText t1,t2,t3,t7,et1;
+    EditText t1,t2,t3,t7,et1,et2;
+    //XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+    //XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
     //-------------------------------------------------------------------------------------------------------------------------
 
     //nuevo
@@ -69,7 +88,30 @@ public class Quejas extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
 
-        btn = (Button)findViewById(R.id.btn);
+        //-------------------------permisos----------------------------------------
+
+
+        btnc = (Button) findViewById(R.id.btn);
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA}, 1000);
+        }
+
+
+
+        //---------------el alertdiag ----------------------
+
+        AlertDialog.Builder alerta = new AlertDialog.Builder(this);
+        alerta.setMessage(R.string.P1_contenidoQuejasSugerencia).setIcon(R.mipmap.ic_omsa).setPositiveButton(R.string.entendido, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+        AlertDialog titulo = alerta.create();
+        titulo.setTitle(R.string.menu_5);
+        titulo.show();
+
+        //---------------------------------------------------
 
         //nuevo
         context = this;
@@ -79,6 +121,7 @@ public class Quejas extends AppCompatActivity {
         t2 = (EditText)findViewById(R.id.t2);
         t3 = (EditText)findViewById(R.id.t3);
         et1 = (EditText)findViewById(R.id.et1);
+        et2 = (EditText)findViewById(R.id.et2);
         t7 = (EditText)findViewById(R.id.t7);
 
 
@@ -144,7 +187,12 @@ public class Quejas extends AppCompatActivity {
 
 //-------------------------------------------------------------------------------------------------------------------------
     //nuevo
+   //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+public void lol(View v){
+    Toast.makeText(getApplicationContext(), "Pronto!", Toast.LENGTH_LONG).show();
+}
 
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     public void onClick(View v) {
         t7.setText(currentTime.toString());
 
@@ -162,7 +210,7 @@ public class Quejas extends AppCompatActivity {
             sub1.setText("Queja y Sugerencias. (OMSA APP)");
             subject1 = sub1.getText().toString();
             msg1.setText("Se a hecho las quejas o sugerencias la persona con los siguientes datos: "+"<br>"+"<br>"+"Nombre: "+t1.getText()+"<br>"+"Telefono: "+t2.getText()+"<br>"+"Email: "+t3.getText()
-                    +"<br>"+"Sugerencias o Quejas: "+et1.getText()+"<br>"+"Estas sugerencias y quejas fueron realizadas el ("+t7.getText()+") Mediante la App mobile de la OMSA");
+                    +"<br>"+"Sugerencias o Quejas: "+et1.getText()+"<br>"+"Ficha de autobus:"+et2.getText()+"<br>"+"Estas sugerencias y quejas fueron realizadas el ("+t7.getText()+") Mediante la App mobile de la OMSA");
             textMessage1 = msg1.getText().toString();
 
             Properties props = new Properties();

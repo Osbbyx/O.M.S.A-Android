@@ -35,7 +35,7 @@
                 android:drawableLeft="@drawable/ic_live_tv_black_60dp"
                 android:paddingLeft="50dp"
                 android:paddingRight="90dp"
-                android:text="Noticias"
+                android:text="@string/P1_noticias"
                 android:textColor="#fff"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -45,7 +45,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Esta funcionalidad, te permite ver las ultimas noticias de la OMSA"
+                android:text="@string/P1_contenidoNoticias"
                 android:textSize="20sp" />
 
             <Button
@@ -56,7 +56,7 @@
                 android:drawableLeft="@drawable/ic_important_devices_black_60dp"
                 android:paddingLeft="50dp"
                 android:paddingRight="90dp"
-                android:text="Reclamacion de objetos extraviados"
+                android:text="@string/P1_Objetos_perdidos"
                 android:textColor="#fff"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -66,7 +66,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Este es un servicio, el se encarga de hacer una reclamacion en caso de perder un objeto en alguna de las guaguas de esta institucion, la cual nos llega a nosotros y podemos contactarlo o en caso de ir directamente a la oficina, confirmar dicho objeto exista."
+                android:text="@string/P1_contenidoObjetosPerdidos"
                 android:textSize="20sp" />
 
             <Button
@@ -77,7 +77,7 @@
                 android:drawableLeft="@drawable/ic_directions_bus_black_60dp"
                 android:paddingLeft="50dp"
                 android:paddingRight="90dp"
-                android:text="solicitud de servicios especiales de autobuses"
+                android:text="@string/P1_Solicitud_De_Autobus"
                 android:textColor="#fff"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -87,7 +87,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Este es un servicio, el cual si se necesita una guagua de esta institucion, para un lugar especifico que no se anuestras rutas, aqui puede hacer una solicitud para cuando y para donde va el servicio solicitado."
+                android:text="@string/P1_contenido_Solicitud_autobus"
                 android:textSize="20sp" />
 
             <Button
@@ -98,7 +98,7 @@
                 android:drawableLeft="@drawable/ic_nature_people_black_60dp"
                 android:paddingLeft="50dp"
                 android:paddingRight="90dp"
-                android:text="Parada mas cercana"
+                android:text="@string/P1_parada_mas_Cercana"
                 android:textColor="#fff"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -108,7 +108,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Esta funcionalidad que lo que hace es, depende de la localizacion en la que te encuentres, ensenarte la parada mas cercana a donde te encuentras."
+                android:text="@string/P1_contenido_de_parada"
                 android:textSize="20sp" />
 
             <Button
@@ -116,7 +116,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bordes"
-                android:text="Paso 1"
+                android:text="@string/P1_paso1"
                 android:textColor="#fff"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -132,7 +132,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Click al botono superior derecho, el cual lo llevara en su lacalidad actual."
+                android:text="@string/P1_contenidoPaso1"
                 android:textSize="20sp" />
 
             <Button
@@ -140,7 +140,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bordes"
-                android:text="Paso 2"
+                android:text="@string/P1_paso2"
                 android:textColor="#fff"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -156,7 +156,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Click en el boton inferior al su derecha + o -, para aumentar o alejar del punto. "
+                android:text="@string/P1_contenidoPaso2"
                 android:textSize="20sp" />
 
             <Button
@@ -164,7 +164,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bordes"
-                android:text="Paso 3"
+                android:text="@string/P1_Paso3"
                 android:textColor="#fff"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -180,7 +180,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="El punto azul es usted y es como se guiara para saber su parada mas cercana."
+                android:text="@string/P1_contenidoPaso3"
                 android:textSize="20sp" />
 
             <Button
@@ -188,7 +188,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bordes"
-                android:text="Paso 4"
+                android:text="@string/P1_Paso4"
                 android:textColor="#fff"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -204,7 +204,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Estos autobuses azules en el mapas son las paradas, el autobus mas cercano al punto azul, es su parada mas cercana."
+                android:text="@string/P1_contenidoPaso4"
                 android:textSize="20sp" />
 
             <Button
@@ -215,7 +215,7 @@
                 android:drawableLeft="@drawable/ic_record_voice_over_black_60dp"
                 android:paddingLeft="50dp"
                 android:paddingRight="90dp"
-                android:text="Quejas y Sugerencias"
+                android:text="@string/P1_QuejasSugerencia"
                 android:textColor="#fff"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -225,7 +225,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Esta funcionalidad, te permite enviar cualquier sugerencia o queja que tengas, este sera resivido a la OMSA y se tomara en cuenta."
+                android:text="@string/P1_contenidoQuejasSugerencia"
                 android:textSize="20sp" />
 
             <Button
@@ -236,7 +236,7 @@
                 android:drawableLeft="@drawable/ic_star_black_60dp"
                 android:paddingLeft="50dp"
                 android:paddingRight="90dp"
-                android:text="Mensaje del Director"
+                android:text="@string/P1_Mensaje_Director"
                 android:textColor="#fff"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -246,7 +246,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Este tiene la funcionalidad de permitirnos leer el mensaje del Director de la (OMSA), dirigido a las personas que utilizan la app."
+                android:text="@string/P1_contenido_MensajeDirector"
                 android:textSize="20sp" />
 
             <Button
@@ -254,7 +254,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bordes"
-                android:text="Cosas a por venir"
+                android:text="@string/P1_Cosas_porVenir"
                 android:textColor="#fff"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -264,7 +264,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Esta app fue creada con el proposito de tener todos los servicios de la (OMSA), sin tener que ir muy lejos y en tu propio celular, con el tiempo mientras se vayan requiriendo nuevos servicios , estos se iran integrando y la aplicacion ira actualizandose y tendra aun mas servicios y mas contenido."
+                android:text="@string/P1_contenidoCosasPorVenir"
                 android:textSize="20sp" />
 
         </LinearLayout>

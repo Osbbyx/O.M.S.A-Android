@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OMSA</string>
+    <string name="nav_header_title">OMSA Services</string>
+    <string name="nav_header_subtitle">Phone: (809) 221-6672</string>
+    <string name="Creador">Created by: Osbbyx- ©(OMSA) 2019</string>
+    <string name="title_activity_ubicacion">Map</string>
+    <string name="title_activity_servicioparada">Map</string>
+    <string name="nav_header_desc">This app was created by Oliver Smit Bencosme Bencosme, being an intern in the institution (OMSA), where I last 1 month and 2 weeks and in that type I create 4 applications for the institution, which 1 of them is the current App.</string>
+    <string name="navigation_drawer_open">Opening browser(Osbbyx)</string>
+    <string name="navigation_drawer_close">Closing browser(Osbbyx)</string>
+    <string name="entendido">Ok</string>
+
+
+    <!-- Menu de Navegacion  -->
+    <string name="menu_1">Lost objects</string>
+    <string name="menu_2">Bus request</string>
+    <string name="menu_3">News</string>
+    <string name="menu_4">Nearest stop</string>
+    <string name="menu_5">Complaints and suggestions</string>
+    <string name="menu_6">Director s Message</string>
+    <string name="menu_divisor">Communication</string>
+    <string name="menu_7">About us</string>
+    <string name="menu_8">Contact</string>
+    <string name="menu_9">About the App</string>
+    <string name="menu_10">Transport information</string>
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    Login   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+    <string name="Lo_Recordar">Remember</string>
+    <string name="Lo_Iniciar">login</string>
+    <string name="Lo_AunNo">I don t have a user yet,</string>
+    <string name="Lo_Solicitar">Request a user</string>
+    <string name="Lo_Copyright">®Copyright-OMSA 2019 (Osbbyx)</string>
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    Register   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+    <string name="RG_Nombre">Full name</string>
+    <string name="RG_Telefono">Phone </string>
+    <string name="RG_Correo">Email</string>
+    <string name="RG_Edad">Age</string>
+    <string name="RG_Pass">Password</string>
+    <string name="RG_CPass">Confirm Password</string>
+    <string name="RG_Registrar">Register</string>
+
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    Acerca de   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+    <string name="P1_noticias">News</string>
+    <string name="P1_contenidoNoticias">This functionality allows you to see the latest news from the OMSA.</string>
+    <string name="P1_Objetos_perdidos">Lost objects</string>
+    <string name="P1_contenidoObjetosPerdidos">This service is responsible for making a claim in case of loss an object on a bus of this institution, which reaches us and we can contact you.</string>
+    <string name="P1_Solicitud_De_Autobus">Bus request</string>
+    <string name="P1_contenido_Solicitud_autobus">In case you need a bus from this institution, for a place specific, here you can make a request for when and where the requested service goes.</string>
+    <string name="P1_parada_mas_Cercana">Nearest stop</string>
+    <string name="P1_contenido_de_parada">This function allows you to quickly locate the stop closest to your location.</string>
+    <string name="P1_paso1">Step 1</string>
+    <string name="P1_contenidoPaso1">Press the upper right button, which will take you to your current location.</string>
+    <string name="P1_paso2">Step 2</string>
+    <string name="P1_contenidoPaso2">Press the button on the lower right + to increase or - to move away from the point.</string>
+    <string name="P1_Paso3">Step 3</string>
+    <string name="P1_contenidoPaso3">The blue dot is you and it s how you will be guided to know your nearest stop.</string>
+    <string name="P1_Paso4">Step 4</string>
+    <string name="P1_contenidoPaso4">(These blue buses on the map are the stops). The bus closest to the blue point is its closest stop.</string>
+    <string name="P1_QuejasSugerencia">Complaints and suggestions</string>
+    <string name="P1_contenidoQuejasSugerencia">This functionality allows you to send any suggestion or complaint you have, the first field It is for your complaints or suggestions, the second field to upload photos of the complaint and the third field for the bus file where there was the inconvenience.</string>
+    <string name="P1_Mensaje_Director">Director s Message</string>
+    <string name="P1_contenido_MensajeDirector">This has the functionality of allowing us to read the message of the Director of the (OMSA), aimed at people who use the app.</string>
+    <string name="P1_Cosas_porVenir">Things to come</string>
+    <string name="P1_contenidoCosasPorVenir">This app was created with the purpose of having all the services of the (OMSA), without having that go very far and on your own cell phone, over time as new services are required, these will be integrated and the application will be updated and will have even more services and more content.</string>
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    Contacto   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+    <string name="P2_Titular">Main office</string>
+    <string name="P2_info1">Extension February 27, Santo Domingo, RD</string>
+    <string name="P2_info2">Web: omsa.gob.do</string>
+    <string name="P2_info3">Phone:(809) 221-6672</string>
+    <string name="P2_info4">Fax:(809)560-5564</string>
+    <string name="P2_info5">Contact: correspondencia@omsa.gob.do</string>
+    <string name="P2_info6">Monday to Friday 8:00 AM to 7:00 PM</string>
+    <string name="P2_info7">Institutional mail: http://mail.hosting.gob.do</string>
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    Director   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+    <string name="P3_info1">Lic. Héctor Mojica director of the Metropolitan Office of Bus Services (OMSA)</string>
+    <string name="P3_info2">Welcome message</string>
+    <string name="P3_mensaje">Héctor Mojica, was born on December 2, 1951, in Santo Domingo, D. N. He studied Pedagogy, Mention Letters, at the Autonomous University of Santo Domingo, UASD. He worked as a teacher from 1975 to 1985, in the Academy schools of Education, Divine Teacher and Pedro Francisco Bonó. He is married to Mrs. Elizabeth Ozuna, and is the father of three children.</string>
+    <string name="P3_mensajep2">The first position held by Mojica in the public sector was as Governor of the City Hall, of the City Council of the National District (2002-2004). In addition, in the last decade he has held the following positions:</string>
+    <string name="P3_mensajep3">Administrative Deputy Director of National Assets (2004-2007).</string>
+    <string name="P3_mensajep4">Vice-Chairman of the Board of the Patrimony Fund of Reformed Companies –FONPER- (2007-2009, 2011-2012).</string>
+    <string name="P3_mensajep5">Minister Counselor at the Dominican Embassy in the Bolivarian Republic of Venezuela (2009-2010).</string>
+    <string name="P3_mensajep6">Minister Counselor at the Dominican Embassy in Santiago, Chile (2010-2011).</string>
+    <string name="P3_mensajep7">General Director of the Technical Office of Land Transportation -OTTT- (2012-2017).</string>
+    <string name="P3_mensajep8">Chairman of the Coordination Council of the Special Border Development Zone -CCDF- (2017).</string>
+    <string name="P3_mensajep9">Current General Director of the Metropolitan Office of Bus Services -OMSA-</string>
+
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    Quejas o Sugerencias   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+    <string name="P4_info1">Complaint or suggestions:</string>
+    <string name="P4_info2">Complaint or suggestions:</string>
+    <string name="P4_info4">Bus card</string>
+    <string name="P4_Enviar">Submit</string>
+
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    Objetos Perdidos   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+
+    <string name="P5_titular">Lost objects</string>
+    <string name="P5_nombre">Username</string>
+    <string name="P5_telefono">Phone </string>
+    <string name="P5_correo">Email</string>
+    <string name="P5_ficha">Bus Card (Optional)</string>
+    <string name="P5_fecha">Date of loss</string>
+    <string name="P5_hora">Approximate time</string>
+    <string name="P5_corredor">Corridor (Route)</string>
+    <string name="P5_descripcion">Object Description</string>
+    <string name="P5_finalizar">Finalize</string>
+
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    Solicitud de autobús    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+    <string name="P6_titular">Bus request</string>
+    <string name="P6_nombreInstitucion">Name of the institution</string>
+    <string name="P6_telefono">Phone</string>
+    <string name="P6_celular">Cel (Optional)</string>
+    <string name="P6_nombre">Applicant name</string>
+    <string name="P6_Correo">Email</string>
+    <string name="P6_Fecha">Date of Service</string>
+    <string name="P6_Desde">Since what hour</string>
+    <string name="P6_Hasta">Until what time</string>
+    <string name="P6_Destino">Destination</string>
+    <string name="P6_Descripcion">Application Description</string>
+    <string name="P6_Finalizar">Finalize</string>
+
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    Sobre nosotros    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+    <string name="P7_titular">About us?</string>
+    <string name="P7_t1">The Metropolitan Office of Bus Services (OMSA)</string>
+    <string name="P7_co1">It was created with the purpose of providing the service of preparation, maintenance repair and dispatch of the public transport bus fleet being recognized as the leading institution in the field of metropolitan public transport in the Dominican Republic, giving users a quality transport service, Efficient and safe at an affordable cost.</string>
+    <string name="P7_t2">View</string>
+    <string name="P7_co2">To be recognized as the leading institution in the area of metropolitan public transport in the Dominican Republic.</string>
+    <string name="P7_t3">Mission </string>
+    <string name="P7_co3">Provide our users with a quality, efficient and safe transport service at a cost affordable, committing to the implementation of environmental protection policies, supported by teamwork and the occupational health of our employees.</string>
+    <string name="P7_t4">Values</string>
+    <string name="P7_co4">1-Responsibility</string>
+    <string name="P7_co5">2-Honesty</string>
+    <string name="P7_co6">3-Loyalty</string>
+    <string name="P7_co7">4-Respect</string>
+    <string name="P7_co8">5-Honesty</string>
+    <string name="P7_co9">6-Solidarity</string>
+
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    Pantalla Principal   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+    <string name="Noticias">News</string>
+    <string name="Paradas">Stops</string>
+    <string name="objetos_perdidos">Lost objects</string>
+    <string name="Quejas_sugerencias">Complaints and suggestions</string>
+    <string name="Solicitud_autobus">Bus request</string>
+    <string name="mensaje_del_director">Director s Message</string>
+
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    Autobuses   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+    <string name="P8_titularPrincipal">General Bus Information</string>
+    <string name="P8_contenidoPrincipal">Each bus is operated by a driver and a cashier on board, properly uniformed.</string>
+    <string name="P8_info">information:</string>
+    <string name="P8_titulo1">Price</string>
+    <string name="P8_co1">15$ DOP</string>
+    <string name="P8_titulo2">Schedule</string>
+    <string name="P8_co2">From Monday to Sunday 06:00 AM to 10:00 PM</string>
+    <string name="P8_titulo3">Corridors</string>
+    <string name="P8_co3">Corredor 27 de Febrero</string>
+    <string name="P8_co4">Corredor Kennedy</string>
+    <string name="P8_co5">Corredor Alcarrizos</string>
+    <string name="P8_co6">Corredor Maximo Gomez</string>
+    <string name="P8_co7">Corredor Independencia</string>
+    <string name="P8_co8">Corredor Los Rios</string>
+    <string name="P8_co9">Corredor Naco</string>
+    <string name="P8_co10">Corredor Charles de Gaulle</string>
+    <string name="P8_co11">Corredor La Barquita</string>
+    <string name="P8_co12">Corredor Juan Bosch</string>
+    <string name="P8_co13">Corredor Lincoln</string>
+    <string name="P8_co14">Corredor Olimpico</string>
+    <string name="P8_co15">Corredor Luperon</string>
+    <string name="P8_co16">Corredor Bolivar</string>
+    <string name="P8_co17">Corredor Central(Santiago)</string>
+    <string name="P8_co18">Corredor Canabacoa(Santiago)</string>
+    <string name="P8_co19">Corredor Gurabo(Santiago)</string>
+
+    <string name="FloatButton">Services of the (OMSA)</string>
+
+    <string name="VerRuta">See routes on the map</string>
+
+
+</resources>

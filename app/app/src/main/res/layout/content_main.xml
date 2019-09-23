@@ -57,7 +57,7 @@
                 android:onClick="servicio3"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:text="Noticias"
+                android:text="@string/Noticias"
                 android:textColor="@android:color/background_light"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -77,7 +77,7 @@
                 android:onClick="servicio4"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:text="Paradas"
+                android:text="@string/Paradas"
                 android:textColor="@android:color/background_light"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -105,7 +105,7 @@
                 android:onClick="servicio1"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:text="Reclamacion de objetos"
+                android:text="@string/objetos_perdidos"
                 android:textColor="@android:color/background_light"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -125,7 +125,7 @@
                 android:onClick="servicio5"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:text="Quejas y Sugerencias"
+                android:text="@string/Quejas_sugerencias"
                 android:textColor="@android:color/background_light"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -152,7 +152,7 @@
                 android:onClick="servicio2"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:text="solicitud de servicios"
+                android:text="@string/Solicitud_autobus"
                 android:textColor="@android:color/background_light"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -172,7 +172,7 @@
                 android:onClick="servicio6"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:text="Mensaje del director"
+                android:text="@string/mensaje_del_director"
                 android:textColor="@android:color/background_light"
                 android:textSize="20sp"
                 android:textStyle="bold" />

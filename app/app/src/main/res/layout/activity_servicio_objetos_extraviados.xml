@@ -31,8 +31,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Servicio 2 Solicitud de Servicio Especial de Autobuses"
-                android:textSize="18sp" />
+                android:text="@string/P6_titular"
+                android:textColor="#000"
+                android:textSize="20sp" />
 
             <Space
                 android:layout_width="match_parent"
@@ -44,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:gravity="center"
-                android:hint="Nombre de la institucion"
+                android:hint="@string/P6_nombreInstitucion"
                 android:inputType="textPersonName" />
 
             <TextView
@@ -64,7 +65,7 @@
                 android:focusable="false"
                 android:focusableInTouchMode="false"
                 android:gravity="center"
-                android:hint="Telefono"
+                android:hint="@string/P6_telefono"
                 android:inputType="phone" />
 
             <TextView
@@ -79,7 +80,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:gravity="center"
-                android:hint="Celular (Opcional)"
+                android:hint="@string/P6_celular"
                 android:inputType="phone" />
 
             <TextView
@@ -99,7 +100,7 @@
                 android:focusable="false"
                 android:focusableInTouchMode="false"
                 android:gravity="center"
-                android:hint="Nombre del solicitante"
+                android:hint="@string/P6_nombre"
                 android:inputType="textPersonName" />
 
             <TextView
@@ -119,7 +120,7 @@
                 android:focusable="false"
                 android:focusableInTouchMode="false"
                 android:gravity="center"
-                android:hint="Correo Electronico"
+                android:hint="@string/P6_Correo"
                 android:inputType="textEmailAddress" />
 
             <TextView
@@ -135,7 +136,7 @@
                 android:ems="10"
                 android:focusable="false"
                 android:gravity="center"
-                android:hint="Fecha del Servicio"
+                android:hint="@string/P6_Fecha"
                 android:inputType="date"
                 android:onClick="fecha" />
 
@@ -154,7 +155,7 @@
                 android:focusable="false"
                 android:focusableInTouchMode="false"
                 android:gravity="center"
-                android:hint="Desde que hora"
+                android:hint="@string/P6_Desde"
                 android:inputType="number"
                 android:onClick="hora" />
 
@@ -173,7 +174,7 @@
                 android:focusable="false"
                 android:focusableInTouchMode="false"
                 android:gravity="center"
-                android:hint="Hasta que hora"
+                android:hint="@string/P6_Hasta"
                 android:inputType="number"
                 android:onClick="hora2" />
 
@@ -189,7 +190,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:gravity="center"
-                android:hint="Destino"
+                android:hint="@string/P6_Destino"
                 android:inputType="textPersonName" />
 
             <Space
@@ -202,7 +203,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:gravity="center"
-                android:hint="Descripcion de Solicitud"
+                android:hint="@string/P6_Descripcion"
                 android:inputType="textMultiLine" />
 
             <Space
@@ -215,7 +216,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/bordes"
                 android:onClick="onClik"
-                android:text="Finalizar"
+                android:text="@string/P6_Finalizar"
                 android:textColor="#fff" />
 
             <Space

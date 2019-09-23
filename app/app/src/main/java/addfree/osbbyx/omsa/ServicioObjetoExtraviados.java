@@ -1,7 +1,9 @@
 package addfree.osbbyx.omsa;
 
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -66,6 +68,21 @@ public class ServicioObjetoExtraviados extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_servicio_objeto_extraviados);
+
+        //---------------el alertdiag ----------------------
+
+        AlertDialog.Builder alerta = new AlertDialog.Builder(this);
+        alerta.setMessage(R.string.P1_contenidoObjetosPerdidos).setIcon(R.mipmap.ic_omsa).setPositiveButton(R.string.entendido, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+        AlertDialog titulo = alerta.create();
+        titulo.setTitle(R.string.menu_1);
+        titulo.show();
+
+        //---------------------------------------------------
 
         Clases = FirebaseDatabase.getInstance().getReference("usuarios");
 

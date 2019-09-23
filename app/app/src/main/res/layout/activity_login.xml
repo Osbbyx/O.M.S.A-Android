@@ -57,6 +57,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="49dp"
                 android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                android:drawablePadding="8dp"
                 android:ems="10"
                 android:gravity="center|left"
                 android:hint="Email  "
@@ -73,6 +74,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="49dp"
                 android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:drawablePadding="8dp"
                 android:ems="10"
                 android:hint="Contraseña"
                 android:inputType="textPassword"
@@ -88,8 +90,13 @@
                 android:id="@+id/checkBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:checked="true"
+                android:clickable="false"
+                android:editable="false"
+                android:enabled="false"
+                android:focusable="false"
                 android:gravity="center|start"
-                android:text="Recordar" />
+                android:text="@string/Lo_Recordar" />
 
             <Space
                 android:layout_width="match_parent"
@@ -101,22 +108,10 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/bordes"
                 android:onClick="login"
-                android:text="iniciar sesion"
+                android:text="@string/Lo_Iniciar"
                 android:textColor="#fff"
                 android:textColorLink="#00FAF4F4"
                 android:textSize="14sp" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="34dp" />
-
-            <TextView
-                android:id="@+id/textView56"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="No recuerdo mi contraseña"
-                android:textColor="#000" />
 
             <Space
                 android:layout_width="match_parent"
@@ -133,7 +128,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center|right"
-                    android:text="Aun no tengo usuario,"
+                    android:text="@string/Lo_AunNo"
                     android:textColor="#000"
                     android:textSize="16sp" />
 
@@ -143,7 +138,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:onClick="register"
-                    android:text=" Solicitar un usuario"
+                    android:paddingLeft="5dp"
+                    android:text="@string/Lo_Solicitar"
                     android:textColor="#4CAF50"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -159,7 +155,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="bottom|center"
-                android:text="®Copyright-OMSA 2019"
+                android:text="@string/Lo_Copyright"
                 android:textColor="#000"
                 android:textStyle="bold|italic" />
 

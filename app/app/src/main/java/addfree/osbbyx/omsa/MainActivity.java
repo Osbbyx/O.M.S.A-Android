@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Servicios de la OMSA", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, R.string.FloatButton, Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -207,6 +207,9 @@ public class MainActivity extends AppCompatActivity
             startActivity(contacto);
         } else if (id == R.id.nav_send) {
             Intent app = new Intent(this,AcercaDeLaApp.class);
+            startActivity(app);
+        }else if (id == R.id.nav_info) {
+            Intent app = new Intent(this,Autobuses.class);
             startActivity(app);
         }
 

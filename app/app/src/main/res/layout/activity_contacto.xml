@@ -38,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:paddingTop="15dp"
-                android:text="Oficina Principal"
+                android:text="@string/P2_Titular"
                 android:textColor="#4CAF50"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -49,7 +49,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:paddingTop="10dp"
-                android:text="Prolongacion 27 de Febrero, Santo Domingo, RD"
+                android:text="@string/P2_info1"
                 android:textColor="#000"
                 android:textSize="16sp" />
 
@@ -59,7 +59,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:paddingTop="10dp"
-                android:text="Pagina: omsa.gob.do"
+                android:text="@string/P2_info2"
                 android:textColor="#000"
                 android:textSize="16sp" />
 
@@ -69,9 +69,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Tel:(809) 221-6672"
+                android:text="@string/P2_info3"
                 android:textColor="#000"
-                android:textSize="16dp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/textView16"
@@ -79,9 +79,9 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:paddingTop="10dp"
-                android:text="Fax:(809)560-5564"
+                android:text="@string/P2_info4"
                 android:textColor="#000"
-                android:textSize="16dp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/textView17"
@@ -89,9 +89,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Contacto: correspondencia@omsa.gob.do"
+                android:text="@string/P2_info5"
                 android:textColor="#000"
-                android:textSize="16dp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/textView18"
@@ -99,9 +99,9 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:paddingTop="10dp"
-                android:text="De Lunes a Viernes 8:00 AM a 7:00 PM"
+                android:text="@string/P2_info6"
                 android:textColor="#000"
-                android:textSize="16dp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/textView19"
@@ -109,9 +109,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Correo institucional: http://mail.hosting.gob.do"
+                android:text="@string/P2_info7"
                 android:textColor="#000"
-                android:textSize="16dp" />
+                android:textSize="16sp" />
 
         </LinearLayout>
     </ScrollView>
